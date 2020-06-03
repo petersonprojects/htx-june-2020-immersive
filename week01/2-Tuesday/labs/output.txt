@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 hello
+=======
+Hello world
+>>>>>>> 6ae18f8ca5890cc6b4953ba5da5e7e26b5bb9931
 Caspian Sea
 Lake Superior
 Lake Victoria
