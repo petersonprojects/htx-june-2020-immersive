@@ -3,7 +3,7 @@
 # 1. Create a new list called "planets" that holds all of the names of the planets
 # in our solar system. Print the list of planets on the command line.
 
-planet1 = "Earth"
+planet1 = "earth"
 planet2 = "Jupiter"
 planet3 = "Neptune"
 planet4 = "Mars"
