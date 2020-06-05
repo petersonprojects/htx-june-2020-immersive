@@ -122,8 +122,22 @@ print(janInterest)
 # and returns a dictionary containing the tally of how many times 
 # each letter in the alphabet was used in the word. For example:
 
+# this is not working currently i tried :/
 def letter_histogram(string):
-
+  string = ''
+  count = 0
+  letterDict= {}
+  
+  for val in string:
+      count += 1
+      if letterDict[val]>0:
+        count += 1
+      letterDict[val] = count + 1
+    
+  return letterDict
+    
+result = letter_histogram('banana')
+print(result)
 
 
 # >>>letter_histogram('banana')
