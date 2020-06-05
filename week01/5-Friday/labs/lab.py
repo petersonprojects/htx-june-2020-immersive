@@ -16,7 +16,28 @@
 # Aquarius - The Thinker 
 # Pisces - TheMystic 
 
+zodiac = {"Aries":"The Warrior",
+          "Taurus":"The Builder",
+          "Gemini":"The Messenger",
+          "Cancer":"The Mother",
+          "Leo":"The King",
+          "Virgo":"The Analyst",
+          "Libra":"The Judge",
+          "Scorpio":"The Magician",
+          "Sagittarius":"The Gypsy",
+          "Capricorn":"The Father",
+          "Aquarius":"The Thinker",
+          "Pisces":"The Mystic"}
+
+# zodKeys = zodiac.keys()
+
+# for key in zodKeys:
+#   print(key)
+
 #1a. Retrieve information about your zodiac from the zodiac dictionary
+print("\n\n")
+print(f'{zodiac["Capricorn"]}\n')
+
 
 #2. Given the following dictionary
 
@@ -27,12 +48,37 @@ phonebook_dict = {
 }
 
 # 2a. Print Elizabeth's phone number
+
+print(f'Elizabeth\'s Number: {phonebook_dict.get("Elizabeth")}\n')
+
 # 2b. Add a entry to the dictionary: Kareem's number is 938-489-1234.
+
+phonebook_dict["Kareem"] = "938-489-1234"
+
 # 2c. Delete Alice's phone entry.
+
+del phonebook_dict["Alice"]
+
 # 2d. Change Bob's phone number to '968-345-2345'.
+
+phonebook_dict["Bob"] = "968-345-2345"
+
 # 2e. Print all the phone entries.
 
+# for key in phonebook_dict.keys():
+#   print(key)
 
+# for value in phonebook_dict.values():
+#   print(value)
+
+#iterating
+
+items = phonebook_dict.items()
+
+for key, value in items:
+  print(f'{key}: {value}\n')
+
+  
 # 3. Nested dictionaries
 
 ramit = {
