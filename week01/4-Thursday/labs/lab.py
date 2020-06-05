@@ -7,54 +7,52 @@
 
 # 3. Reduce this code using functions
 
+def names():
+    print("Shu")
+    print("Thomas")
+    print("Gustavo")
+    print("Alim")
+    
+
 print("Day 1: Students in SRE class")
 print("lecture: git 101")
-print("Shu")
-print("Thomas")
-print("Gustavo")
-print("Alim")
+names()
 print("Day 2: Students in SRE class")
 print("lecture: git 102")
-print("Shu")
-print("Thomas")
-print("Gustavo")
-print("Alim")
+names()
 print("Day 3: Students in SRE class")
 print("lecture: python 101")
-print("Shu")
-print("Thomas")
-print("Gustavo")
-print("Alim")
+names()
 
 
 #4 Reduce the print statements for the  todolist code we worked on yesterday with a function
 
-todos = []
-index = 0
-while True :
-    index = 0
-    task = input("What would you like to do?\n1. add a item\n2.remove item\n3.Print items\n4.exit\n>>>   ")
-    if int(task) == 1:
-        todoItem = input("Please enter a todo list item >>>   ")
-        todos.append(todoItem)
-        # add item
-    elif int(task) == 2: 
-        # remove item
-        print('Which item do you want to delete?')
-        while index < len(todos):
-            # print(todos[index])
-            print(f'{index + 1}.{todos[index]}')
-            index += 1
-        delItem = input("item# >> ")
-        delItemNum = int(delItem)
-        del todos[delItemNum - 1]
-    elif int(task) == 3:
-        while index < len(todos):
-            print(todos[index])
-            index += 1
-        #print items
-    elif int(task) == 4: 
-        break
+# todos = []
+# index = 0
+# while True :
+#     index = 0
+#     task = input("What would you like to do?\n1. add a item\n2.remove item\n3.Print items\n4.exit\n>>>   ")
+#     if int(task) == 1:
+#         todoItem = input("Please enter a todo list item >>>   ")
+#         todos.append(todoItem)
+#         # add item
+#     elif int(task) == 2: 
+#         # remove item
+#         print('Which item do you want to delete?')
+#         while index < len(todos):
+#             # print(todos[index])
+#             print(f'{index + 1}.{todos[index]}')
+#             index += 1
+#         delItem = input("item# >> ")
+#         delItemNum = int(delItem)
+#         del todos[delItemNum - 1]
+#     elif int(task) == 3:
+#         while index < len(todos):
+#             print(todos[index])
+#             index += 1
+#         #print items
+#     elif int(task) == 4:
+#         break
     
 #5. Nested Functions
 
@@ -62,7 +60,10 @@ while True :
 # Create a function that creates the following recommendation letter. 
 # The Parameters for the functions should be the first and last name person you
 # are recommending
+def recommendation(fName,lName):
+    print(f'{fName} {lName}')
 
+recommendation("Karen", "Jones")
 # Karen Jones
 # 1234 Park St
 # Anytown, Pennsylvania 12345
@@ -98,11 +99,20 @@ while True :
 #8 Write a function that accepts a List of numbers as an argument.
 #Return a new List that includes the only the even numbers.
 
+# def myFunction(param1,param2,param3):
+#     return param1*3, param2*4, param3*5
 
+# print(myFunction(5, 7, 8))
 
+def add(a, b, c):
+    return a + 2*b + 3*c
+
+result = add(c=6,a=4,b=5)
+print(result)
 
 #9 Args and Keyword Args
 # use the recommendation letter exercise and name your arguments
+
 
 
 # Return statements break the code block
