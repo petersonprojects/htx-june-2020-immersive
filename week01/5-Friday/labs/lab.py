@@ -78,7 +78,6 @@ items = phonebook_dict.items()
 for key, value in items:
   print(f'{key}: {value}\n')
 
-  
 # 3. Nested dictionaries
 
 ramit = {
@@ -99,16 +98,33 @@ ramit = {
     ]
 }
 #3a. Write a python expression that gets the email address of Ramit.
+
+result = ramit['email']
+print(result)
+
 #3b. Write a python expression that gets the first of Ramit's interests.
+
+interest = ramit['interests'][0]
+print(interest)
+
 #3c. Write a python expression that gets the email address of Jasmine.
+
+jasEmail = ramit['friends'][0]['email']
+print(jasEmail)
+
 #3d. Write a python expression that gets the second of Jan's two interests.
 
-
+janInterest = ramit['friends'][1]['interests'][1]
+print(janInterest)
 
 # 4. Letter Summary
 # Write a letter_histogram function that takes a word as its input, 
 # and returns a dictionary containing the tally of how many times 
 # each letter in the alphabet was used in the word. For example:
+
+def letter_histogram(string):
+
+
 
 # >>>letter_histogram('banana')
 # {'a': 3, 'b': 1, 'n': 2}
