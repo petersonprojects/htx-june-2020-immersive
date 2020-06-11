@@ -16,6 +16,8 @@
 # Aquarius - The Thinker 
 # Pisces - TheMystic 
 
+zodiac["Virgo"]
+
 #1a. Retrieve information about your zodiac from the zodiac dictionary
 
 #2. Given the following dictionary
@@ -26,6 +28,8 @@ phonebook_dict = {
   'Elizabeth': '484-584-2923'
 }
 
+
+phonebook_dict["Kareem"] = "938-489-1234"
 # 2a. Print Elizabeth's phone number
 # 2b. Add a entry to the dictionary: Kareem's number is 938-489-1234.
 # 2c. Delete Alice's phone entry.
