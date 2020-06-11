@@ -47,6 +47,8 @@ phonebook_dict = {
   'Elizabeth': '484-584-2923'
 }
 
+
+phonebook_dict["Kareem"] = "938-489-1234"
 # 2a. Print Elizabeth's phone number
 
 print(f'Elizabeth\'s Number: {phonebook_dict.get("Elizabeth")}\n')
