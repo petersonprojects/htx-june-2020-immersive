@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            background-color: yellow;
+            border: 20px solid black;
+            padding: 50px;
+            margin: 100px;
+            height: 240px;
+            width: 240px;
+            }
+
+        .container{
+            width: 600px;
+            background-color: yellow;
+            height: 400px;
+        }
+        .box1{
+            float:left;
+            width: 300px;
+            height: 400px;
+            background-color: thistle;
+        }
+
+        .box1a{
+            float:left;
+            width: 280px;
+            height: 380px;
+            background-color: thistle;
+            padding: 10px;
+            overflow: hidden;
+           
+        }
+
+        .box1b{
+            float:left;
+            width: 280px;
+            height: 380px;
+            background-color: thistle;
+            /* padding: 10px; */
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .box1-borderBox{
+            float:left;
+            width: 300px; /* change back to original size */
+            height: 400px;
+            background-color: thistle;
+            /* padding: 10px; */
+            overflow: hidden;
+            /* padding: 50px; */
+            box-sizing: border-box;
+            border: 40px solid teal;
+        }
+
+        .box2{
+            float:left;
+            width: 300px;
+            height: 400px;
+            background-color:teal;
+        }
+    </style>
+</head>
+<body>
+
+
+    1. create a div with container class 
+    2. nest 2 child div containers inside of the of the container class both 
+    with class box1 (ignore the float property for now.  This property allows divs to stack next to each other)
+    3. The contents of each box should cover the yellow background container
+    4. Increase the padding of box1 by 10px;
+    5. What happens ? What is the width of box1 now?  What is the width of Box2?
+    add these together.  Are they less than the container box
+    6. If I increase my margin or padding, what can adjustments can I make 
+    to keep the boxes side by side?
+
+
+    <!-- <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+    </div> -->
+
+
+    <div class="container">
+        <div class="box1-borderBox">
+            <img src="https://picsum.photos/600/800" alt="">
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus voluptatibus nihil doloribus ipsa. Voluptatibus rem accusantium nesciunt? Praesentium nihil officia laborum minima deserunt earum officiis cum tempora, exercitationem consequuntur!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos magnam impedit, repudiandae molestias dolorum sint incidunt veritatis, architecto et, sunt maiores facere? Voluptatum similique, quo voluptatibus voluptatem asperiores eaque iste!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perferendis libero, doloribus ipsum nulla repellendus animi, illo distinctio dolorem eaque assumenda sunt adipisci natus reiciendis, perspiciatis temporibus ex earum quasi?
+        </div>
+    </div>
+
+
+    <div class="box">
+        some box
+    </div>
+    
+    <div style="font-size: 24px">
+        <b> Lorem ipsum dolor sit amet</b>, <span> consectetur 
+          adipisicing elit. </span>
+        Accusantium, voluptates. Error voluptas, et modi sapiente eveniet 
+        voluptatibus corporis necessitatibus <i> ex aliquam explicabo repudiandae </i>
+        nulla facere similique officia architecto? Delectus, necessitatibus.
+    </div>
+</body>
+</html>
