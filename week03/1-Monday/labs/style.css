@@ -1,0 +1,35 @@
+a, h1, h2{
+    background-color:yellow;
+}
+
+li > a{
+    color:purple;
+    text-decoration: none;
+}
+
+h5 + p{ 
+    background-color: yellow;
+}
+
+p:nth-child(2){
+    color:green;
+    background-color: orange;
+}
+
+.light{
+    color:black;
+    background-color:white;
+    padding:10px;
+}
+
+.dark{
+    color:white;
+    background-color:black;
+    padding:10px;
+}
+
+#sample{
+    color:moccasin;
+    background-color: red;
+    font-size: 30px;
+}
