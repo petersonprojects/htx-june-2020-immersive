@@ -9,7 +9,7 @@
     }
 
 .container{
-    width: 600px;
+    width: 700px;
     background-color: yellow;
     height: 400px;
 }
@@ -18,6 +18,10 @@
     width: 300px;
     height: 400px;
     background-color: thistle;
+    overflow:hidden;
+    padding:30px;
+    border:solid 5px red;
+    box-sizing: border-box;
 }
 
 .box1a{
@@ -27,7 +31,6 @@
     background-color: thistle;
     padding: 10px;
     overflow: hidden;
-   
 }
 
 .box1b{
@@ -49,7 +52,6 @@
     overflow: hidden;
     /* padding: 50px; */
     box-sizing: border-box;
-    border: 40px solid teal;
 }
 
 .box2{
@@ -58,3 +60,56 @@
     height: 400px;
     background-color:teal;
 }
+
+.myBox{
+    background-color: blue;
+    font-size:50px;
+    width:200px;
+    height:200px;
+    border:groove 10px black;
+    /* border-left: solid 5px black;
+    border-right: groove 5px black;
+    border-bottom: solid 5px yellowgreen;
+    border-bottom: solid 5px yellowgreen; */
+    /* border-top-color: teal;
+    border-bottom-color: teal;
+    border-top-width:25px; */
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:100px;
+    margin:20px;
+}
+
+div{
+    border: 2px solid black;
+}
+span{
+    background-color: yellow;
+    border: 2px solid black;
+    height:50px;
+    padding:10px;
+    margin:15px;
+    display:block;
+}
+a{
+    background-color: orange;
+    border: 2px solid orange; 
+    height:50px;
+    width:300px;
+    display:inline-block; /*allows height width adjustment*/
+}
+
+img{
+    height:300px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+#content{
+    width: 100vw;
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+}
+

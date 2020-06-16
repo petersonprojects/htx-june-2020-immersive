@@ -1,0 +1,52 @@
+
+.header{
+    height:400px;
+    background-color: yellow;
+    position: relative;
+}
+
+.imgContainer{
+    height:400px;
+    overflow:hidden;
+    position:relative;
+}
+
+.cityimage{
+    position: absolute;
+    top:-115px;
+    left: -85px;
+}
+
+.opacity{
+    background-color: black;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    opacity: 45%;
+}
+
+.textContainer{
+    position:absolute;
+    top:0px;
+    width:100%;
+    color:white;
+    height: 400px;
+    font-size: 70px;
+    text-align: center;
+    line-height: 400px;
+}
+
+.puppy{
+    height: 200px;
+    width: 200px;
+    border-radius:80%;
+    overflow:hidden;
+    position:relative;
+    top: -100px;
+    left: 75px;
+}
+
+#official{
+    position: absolute;
+}
