@@ -1,0 +1,61 @@
+h1{
+    background-color: yellow; 
+ }
+
+ ul >li > a{
+     color:purple;
+     text-decoration: none;
+ }
+
+ h5 + p {
+     background-color: yellow;
+ }
+
+ /* a, h1, h5 {
+     color: green;
+
+ } */
+ p > a {
+     color: green;
+     text-decoration:none;
+ }
+
+ p{
+    background-color: lightskyblue; 
+    color: white; 
+    padding: 10px;
+    font-size: 10px;
+ }
+
+ .liTomato{
+     background-color: tomato;
+ }
+
+ .light{
+     color: black;
+     background-color: white;
+     padding: 10px;
+ }
+
+ .dark{
+     color: white;
+     background-color: black;
+     padding: 10px;
+ }
+
+ #sample{
+     background-color: red;
+     font-size: 30px;
+     color:moccasin;
+     font-weight: bold;
+ }
+
+ #darkId{
+     background-color: green;
+     color: pink;
+
+ }
+
+ p:nth-child(2){
+     background-color: orange;
+ }

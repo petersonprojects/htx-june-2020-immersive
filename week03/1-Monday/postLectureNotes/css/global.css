@@ -1,0 +1,27 @@
+
+h1{
+    background-color: yellow !important;
+}
+
+.myHeader{
+    background-color: salmon;
+}
+
+#myIdRule{
+    background-color: green;
+}
+
+div{
+    font-size: 40px;
+    color: purple;
+
+}
+
+.innerText{
+    font-size: 16px;
+    
+}
+
+.text{
+    font-family: 'MuseoModerno', cursive !important;
+}
