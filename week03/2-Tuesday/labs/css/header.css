@@ -1,5 +1,6 @@
 
 .header{
+<<<<<<< HEAD
     height:400px;
     background-color: yellow;
     position: relative;
@@ -15,6 +16,26 @@
     position: absolute;
     top:-115px;
     left: -85px;
+=======
+    height: 400px;
+    background-color: yellow;
+    position: relative;
+
+}
+
+.imgContainer{
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.cityImage{
+    position: absolute;
+    top: -120px;
+    left: -90px;
+
+>>>>>>> 2cfdda80a2b8c157577816c9cbdc6e5c60c6bc29
 }
 
 .opacity{
@@ -23,6 +44,7 @@
     width: 100%;
     position: absolute;
     top:0px;
+<<<<<<< HEAD
     opacity: 45%;
 }
 
@@ -35,11 +57,30 @@
     font-size: 70px;
     text-align: center;
     line-height: 400px;
+=======
+    opacity: 50%;
+    color: white;
+    
+
+}
+
+.textContainer{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    color: white;
+    height: 400px;
+    font-size: 60px;
+    text-align: center;
+    line-height: 400px;
+
+>>>>>>> 2cfdda80a2b8c157577816c9cbdc6e5c60c6bc29
 }
 
 .puppy{
     height: 200px;
     width: 200px;
+<<<<<<< HEAD
     border-radius:80%;
     overflow:hidden;
     position:relative;
@@ -49,4 +90,20 @@
 
 #official{
     position: absolute;
+=======
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    top: -100px;
+    left: 75px;
+
+}
+
+.official{
+    position:absolute;
+    top: -400px;
+    left: -200px;
+    
+
+>>>>>>> 2cfdda80a2b8c157577816c9cbdc6e5c60c6bc29
 }

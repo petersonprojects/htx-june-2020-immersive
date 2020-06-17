@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .rel{
     /* background-color: rgba(240, 240, 23, 0.548); */
     position:relative;
@@ -5,16 +6,41 @@
     width:700px;
     margin-top: 15px;
     margin-bottom: 15px;
+=======
+
+.rel{
+    /* background-color: rgb(241, 241, 107); */
+    position: relative;
+    /* bottom: 50px; */
+    /* left: 100px; */
+    width: 700px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 300px;
+    /* top: 50px; */
+    left: 50px;
+    
+>>>>>>> 2cfdda80a2b8c157577816c9cbdc6e5c60c6bc29
 }
 
 img{
     height: 200px;
+<<<<<<< HEAD
     border-radius: 5%;
 }
 
 #kittens{
     position:relative;
     top: 50px;
+=======
+    border-radius: 10%;
+}
+
+#kittens{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+>>>>>>> 2cfdda80a2b8c157577816c9cbdc6e5c60c6bc29
 }
 
 #parent{
@@ -24,6 +50,7 @@ img{
 }
 
 #puppy{
+<<<<<<< HEAD
     position: relative;
     z-index: 1;
     /* left: 50px; */
@@ -39,3 +66,22 @@ img{
     top:10px;
     z-index: 2;
 }
+=======
+    position: absolute;
+    top: 50px;
+    /* position: relative; */
+    z-index: 10;
+}
+
+#navbar{
+    height: 60px;
+    background-color: yellow;
+    /* position: fixed; */
+    width: 100%;
+    /* top: 50px; */
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+
+}
+>>>>>>> 2cfdda80a2b8c157577816c9cbdc6e5c60c6bc29

@@ -1,0 +1,29 @@
+
+.myBox{
+    width:200px;
+    height: 200px;
+    background-color: yellow;
+    font-size: 20px;
+    /* border: solid 15px tomato; */
+    /* border-top-color: teal;
+    border-top-width: 20px; */
+    padding-top: 15px;
+    padding-left: 15px;
+    margin: 15px;
+}
+
+
+div{
+background-color: cyan;
+border: 2px solid black;
+}
+
+span{
+background-color: yellow;
+border: 2px solid black;
+}
+
+a{
+background-color: orange;
+border: 2px solid orange; 
+}

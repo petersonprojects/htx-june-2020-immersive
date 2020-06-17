@@ -1,0 +1,17 @@
+/* lab */
+
+.container{
+    
+    height: 1500px;
+    background-color: turquoise;
+}
+
+.item{
+
+    height: 150px;
+    background-color:tomato;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+
+}
