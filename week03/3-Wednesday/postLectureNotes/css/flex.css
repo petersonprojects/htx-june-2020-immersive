@@ -1,0 +1,42 @@
+.container{
+    height: 1500px;
+    background-color: turquoise;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.item{
+    
+    
+    width: 150px; 
+    height: 150px;
+    background-color:tomato;
+    margin: 10px;
+    font-size: 30px;
+    color: white; 
+
+}
+
+.order1{
+    order: 2
+}
+
+.item1{
+    flex-grow: 1;
+}
+
+.item2{
+    flex-grow: 2;
+}
+
+.item3{
+    flex-grow: 3;
+}
+
+
+.something{
+    align-self: center;
+}
