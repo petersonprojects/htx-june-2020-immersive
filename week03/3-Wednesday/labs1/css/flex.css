@@ -1,0 +1,136 @@
+/* lab */
+
+body{
+    margin:0px;
+}
+
+.container{
+    height: 100vh;
+    background-color: turquoise;
+    display:flex;
+    flex-direction: row; 
+    justify-content: center; /*main axis*/
+    align-items: center; /*cross axis*/
+    flex-wrap: wrap;
+
+}
+
+.item{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width:150px;
+    background-color:tomato;
+    margin: 5px;
+    font-size: 30px;
+    color: white;
+    order: 5;
+}
+
+.alignTop{
+    align-self: flex-start;
+}
+.alignBottom{
+    align-self: flex-end;
+}
+.alignStretch{
+    align-self: stretch;
+}
+/* .fg2{
+    flex-grow:2;
+}
+.fg3{
+    flex-grow:3;
+} */
+
+.order1{
+    order:1
+}
+
+.order2{
+    order:2
+}
+.order3{
+    order:3
+}
+
+.order4{
+    order:10;
+}
+
+.header{
+    background-color: purple;
+    height: 10vh;
+}
+
+main{
+    background-color: plum;
+    height: 80vh;
+    display:flex;
+    align-items: stretch;
+}
+
+footer{
+    background-color: green;
+    height: 10vh;
+}
+
+.nav{
+    width: 20vw;
+    background-color: orange;
+}
+
+.innerMain{
+    width: 60vw;
+    background-color: tan;
+}
+
+.ads{
+    width: 20vw;
+    background-color: red;
+}
+
+/* li{
+    display: inline-block;
+    background-color: palegoldenrod;
+    padding:10px;
+    margin-right:6px;
+    width:90px;
+}
+
+ul{
+    display:inline-block;
+
+}
+
+a{
+    text-decoration: none;
+} */
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: skyblue;
+    height: 60px;
+}
+
+ul{
+    display:flex;
+    align-content:center;
+}
+
+li{
+    list-style: none;
+    padding:0px 10px;
+}
+
+a{
+    text-decoration: none;
+    font-size:20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li:hover{
+    background-color: yellow;
+}
