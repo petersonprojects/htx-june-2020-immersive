@@ -14,6 +14,7 @@
 
     margin-left: auto;
     margin-right: auto;
+    margin-top:20px;
 }
 
 
@@ -104,4 +105,12 @@
 
 .border{
     border: 1px black solid;
+}
+
+.bottomborder{
+    border-bottom: solid 1px;
+}
+
+.borderleft{
+    border-left: solid 1px;
 }
