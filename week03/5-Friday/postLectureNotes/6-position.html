@@ -18,15 +18,15 @@
         <!--##################START HERE###################-->
 
         <!-- FLOATS -->
-        <div>Float left</div>
-        <br>
-        <div>Float right</div>
-        <br>
-        <div>Float none</div>
+        <div class="float-left">Float left</div>
+        
+        <div class="float-right">Float right</div>
+        
+        <div class="float-none">Float none</div>
         <br>
 
         <!-- RESPONSIVE FLOATS -->
-        <div>Float right on small or wider</div>
+        <div class="bg-warning float-sm-right float-md-none">Float right on small or wider</div>
         <br>
         <div>Float right on medium or wider</div>
         <br>
@@ -63,9 +63,47 @@
         </div> -->
 
         <!-- FIXED TOP (fixed-top)-->
-        <h3 >Fixed Top</h3>
+        <!-- <h3 class="sticky-top" >Fixed Top</h3> -->
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae iure natus, fuga provident molestias, voluptates molestiae
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs sticky-top" id="navId">
+            <li class="nav-item">
+                <a href="#tab1Id" class="nav-link active">Active</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#tab2Id">Action</a>
+                    <a class="dropdown-item" href="#tab3Id">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#tab4Id">Action</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#tab5Id" class="nav-link">Another link</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+        </div>
+        
+        <script>
+            $('#navId a').click(e => {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        </script>
+
+        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae iure natus, fuga provident molestias, voluptates molestiae
             aperiam sit dicta a assumenda nesciunt quos adipisci reprehenderit animi ipsum unde quasi nobis veniam, modi.
             Fuga natus harum, maxime corporis rerum, maiores delectus aliquam aut quo incidunt dignissimos temporibus? Vitae
             dolorem accusamus voluptatibus illo aut nam praesentium obcaecati quaerat cupiditate distinctio tempora eius
@@ -78,7 +116,7 @@
         <!-- FIXED STICKY (sticky-top)-->
         <h3 >Sticky</h3>
 
-        <p>Est molestias sunt quae quibusdam sequi odit, iusto expedita tempore aspernatur ipsum, necessitatibus rerum debitis,
+        <p >Est molestias sunt quae quibusdam sequi odit, iusto expedita tempore aspernatur ipsum, necessitatibus rerum debitis,
             harum, voluptatibus dolorem. Reprehenderit ex aperiam tempore. Cumque ut iste ullam non pariatur, qui architecto,
             commodi illo praesentium debitis similique, molestiae harum distinctio inventore incidunt enim atque repudiandae
             eius molestias exercitationem tempore odio dignissimos iusto officia. Libero quasi dicta quos est eveniet magni
