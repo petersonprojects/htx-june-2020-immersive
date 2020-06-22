@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
 
+    <style>
+      .blockquote{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+    </style>
   <title>Typography</title>
 </head>
 
@@ -17,6 +22,7 @@
   <div class="container">
     <!--####################START HERE######################-->
 
+    <div class="h2">Header one</div>
     <!-- HEADINGS class=h1 -->
     <h1>Heading One</h1>
     <h2>Heading Two</h2>
@@ -30,10 +36,10 @@
 
 
     <!-- DISPLAY CLASSES (display-1) -->
-    <h1>Display 1</h1>
-    <h2>Display 2</h2>
-    <h3>Display 3</h3>
-    <h4>Display 4</h4>
+    <h1 class="display-1">Display 1</h1>
+    <h2 class="display-2">Display 2</h2>
+    <h3 class="display-3">Display 3</h3>
+    <h4 class="display-4">Display 4</h4>
 
     <br>
     <br>
@@ -43,33 +49,33 @@
       voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</p>
 
     <!-- LEAD (lead)-->
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam
       voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</p>
 
     <!-- MONOSPACE PARAGRAPH (text-monospace)-->
-    <p>My monospace paragraph</p>
+    <p class="text-monospace">My monospace paragraph</p>
 
     <!-- STYLE CLASSES (font-weight-bold, normal, italic)-->
-    <p>Bold Text</p>
-    <p>Normal Text</p>
-    <p>Italic Text</p>
+    <p class="font-weight-bold">Bold Text</p>
+    <p class="font-weight-normal">Normal Text</p>
+    <p class="font-weight-italic">Italic Text</p>
 
     <!-- TEXT TRANSFORMS (text-lowercase, uppercase, capitalize)-->
-    <p>MAKE LOWERCASE</p>
-    <p>make uppercase</p>
-    <p>make capitalized</p>
+    <p class="text-lowercase">MAKE LOWERCASE</p>
+    <p class="text-uppercase">make uppercase</p>
+    <p class="text-capitalize"> make capitalized</p>
 
     <br>
     <br>
 
     <!-- BLOCKQUOTES (blockquote)-->
     <!-- <blockquote> -->
-      <p>This is a blockquote</p>
+      <p class="blockquote">This is a blockquote</p>
     <!-- </blockquote> -->
 
     <!-- BLOCKQUOTE RIGHT ALIGNED (blockquote text-right)-->
     <!-- <blockquote> -->
-      <p>This is a blockquote aligned right</p>
+      <p class="blockquote text-right">This is a blockquote aligned right</p>
     <!-- </blockquote> -->
 
     <!-- BLOCKQUOTE WITH FOOTER (blockquote text-right)(blockquote-footer)-->
@@ -84,7 +90,7 @@
     <br>
 
     <!-- TEXT TRUNCATE (text-truncate)-->
-    <div>
+    <div class="text-truncate">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat nobis sunt qui consequatur architecto veritatis,
       iure odit, debitis pariatur perspiciatis? Asperiores facere veniam, totam ullam dignissimos voluptate atque! Eos, animi
       quos. Sint magni nulla provident et consequatur officia tempora!
@@ -94,7 +100,7 @@
     <br>
 
     <!-- LISTS -->
-    <ul>
+    <ul class="list-unstyled">
       <li>Lorem ipsum dolor sit amet.</li>
       <li>Lorem ipsum dolor sit amet.</li>
       <li>Lorem ipsum dolor sit amet.</li>
@@ -102,10 +108,10 @@
     </ul>
 
     <!-- INLINE LIST -->
-    <ul>
-      <li>Lorem ipsum</li>
-      <li>Lorem ipsum </li>
-      <li>Lorem ipsum </li>
+    <ul class="list-group">
+      <li class="list-group-item">Lorem ipsum</li>
+      <li class="list-group-item">Lorem ipsum </li>
+      <li class="list-group-item">Lorem ipsum </li>
     </ul>
   </div>
 
