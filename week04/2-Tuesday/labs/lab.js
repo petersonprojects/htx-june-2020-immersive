@@ -135,6 +135,10 @@
 
 // var days = ["Monday", "Tuesday", "Wednesday","Thursday","Friday","Saturday","Sunday"];
 
+// for(var index = 0; index < days.length; index++)
+// {
+//     console.log(days[index])
+// }
 
 // for(var i=0;i<7;i++)
 // {
@@ -152,9 +156,16 @@
 // PARAMETERS ARE ALSO A LITTLE DIFFERENT
 
 
-var greeting = "This is a hot and humid day";
-var result = greeting.split(' ')
-console.log(result);
+// var greeting = "This is a hot and humid day";
+// var result = greeting.split(' ')
+// console.log(result);
 
+
+var fruits = ["Apple", "Orange", "Pear","Peach","Banana","Kiwi","Strawberry"];
+
+for(var index = 0; index < fruits.length; index++)
+{
+    console.log(fruits[index])
+}
 
 // // ternary operator
