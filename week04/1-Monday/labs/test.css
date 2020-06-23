@@ -1,0 +1,49 @@
+/* # E63946 - red (accent)
+# F1FAEE - off white (section color)
+# A8DADC - light blue 
+# 457B9D - medium blue (text color)
+# 1D3557 - Dark Blue (header color) */
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.accentFont{
+    color: #E63946;
+}
+
+.btn-primary{
+    background-color: #E63946;
+}
+
+
+
+.btn-primary:hover{
+    background-color: #457B9D;
+}
+
+.offWhiteColor{
+    color: #F1FAEE;
+}
+.offWhiteBg{
+    background-color: #F1FAEE;
+}
+
+.mediumBlueFont{
+    color: #457B9D;
+}
+.mediumBlueBg{
+    background-color: #457B9D;
+}
+
+.darkBlueFont{
+    color: #1D3557;
+}
+.darklueBg{
+    background-color: #1D3557;
+}
+
+.height{
+    height: 400px;
+}
