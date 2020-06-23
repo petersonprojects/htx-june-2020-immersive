@@ -1,6 +1,4 @@
-
 // Declare a variable called "firstName" whose value is your first name 
-
 var firstName = "Micah";
 // Declare a variable called "lastName" whose value is your first name 
 var lastName = "Peterson";
@@ -8,7 +6,6 @@ var lastName = "Peterson";
 var name = firstName +" " +lastName;
 // Print name to the console
 console.log(name);
-
 // Declare a variable called a with a value of 2 
 var a = 2;
 //Declare a variable called b witha value of 3 
@@ -22,7 +19,6 @@ x = "5" + x;
 console.log(x);
 // Print the number of characters in firstName
 console.log(firstName.length);
-
 // If else, fizz buzz
 for (i = 1; i <=100; i++)
 {
@@ -30,21 +26,24 @@ for (i = 1; i <=100; i++)
     {
         console.log("fizz buzz");
     }
+
     else if(i%5==0)
     {
         console.log("fizz");
     }
+
     else if(i%3==0)
     {
         console.log("buzz");
     }
+    
     else
     {
         console.log(i);
     } 
 }
 // ternary operator
-
+// what is a ternary operator?
 
 
 
