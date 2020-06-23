@@ -5,7 +5,7 @@
 
 // Print name to the console
 
-console.log("Micah");
+console.log("Hello World");
 // Declare a variable called a with a value of 2 
 
 //Declare a variable called b witha value of 3 
