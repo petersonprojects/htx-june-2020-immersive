@@ -80,35 +80,48 @@
 //         break;
 // }
 
-var day = "Tuesday";
+// var day = "Tuesday";
 
-switch(day)
+// switch(day)
+// {
+//     case "Monday":
+//         console.log("Monday");
+//         break;
+//     case "Tuesday":
+//         console.log("Tuesday");
+//         break;
+//     case "Wednesday":
+//         console.log("Wednesday");
+//         break;
+//     case "Thursday":
+//         console.log("Thursday");
+//         break;
+//     case "Friday":
+//         console.log("Friday");
+//         break;
+//     case "Saturday":
+//         console.log("Saturday");
+//         break;
+//     case "Sunday":
+//         console.log("Sunday");
+//         break;
+//     default:
+//         console.log("Not a day of the week.");
+//         break;
+// }
+
+for(var i=2;i<20;i+=2)
 {
-    case "Monday":
-        console.log("Monday");
-        break;
-    case "Tuesday":
-        console.log("Tuesday");
-        break;
-    case "Wednesday":
-        console.log("Wednesday");
-        break;
-    case "Thursday":
-        console.log("Thursday");
-        break;
-    case "Friday":
-        console.log("Friday");
-        break;
-    case "Saturday":
-        console.log("Saturday");
-        break;
-    case "Sunday":
-        console.log("Sunday");
-        break;
-    default:
-        console.log("Not a day of the week.");
-        break;
+    console.log("for: " +i)
 }
 
+
+var count = 2;
+while(count <= 20)
+{
+    console.log("while: " +count);
+    count += 2;
+}
+
+
 // ternary operator
-// what is a ternary operator?
