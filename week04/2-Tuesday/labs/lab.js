@@ -20,28 +20,66 @@ console.log(x);
 // Print the number of characters in firstName
 console.log(firstName.length);
 // If else, fizz buzz
-for (i = 1; i <=100; i++)
+// for(i = 1; i <=100; i++)
+// {
+//     if(i%3==0 && i%5==0)
+//     {
+//         console.log("fizz buzz");
+//     }
+
+//     else if(i%5==0)
+//     {
+//         console.log("fizz");
+//     }
+
+//     else if(i%3==0)
+//     {
+//         console.log("buzz");
+//     }
+
+//     else
+//     {
+//         console.log(i);
+//     } 
+// }
+
+//if condition into switch case
+
+var fruit = "Papaya";
+
+if(fruit == "Orange")
 {
-    if(i%3==0 && i%5==0)
-    {
-        console.log("fizz buzz");
-    }
-
-    else if(i%5==0)
-    {
-        console.log("fizz");
-    }
-
-    else if(i%3==0)
-    {
-        console.log("buzz");
-    }
-    
-    else
-    {
-        console.log(i);
-    } 
+    console.log("I'm an orange.");
 }
+else if(fruit == "Mango")
+{
+    console.log("I'm a mango.");
+}
+else if (fruit == "Papaya")
+{
+    console.log("I'm a papaya.");
+}
+else
+{
+    console.log("You ain't got no " +fruit);
+}
+
+switch(fruit)
+{
+    case "Orange":
+        console.log("Im an orange.");
+        break;
+    case "Mango":
+        console.log("Im a mango.");
+        break;
+    case "Papaya":
+        console.log("Im a papaya.");
+        break;
+    default:
+        console.log("No fruit here.");
+        break;
+}
+
 // ternary operator
 // what is a ternary operator?
 
