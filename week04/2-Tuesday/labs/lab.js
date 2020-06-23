@@ -161,11 +161,32 @@
 // console.log(result);
 
 
-var fruits = ["Apple", "Orange", "Pear","Peach","Banana","Kiwi","Strawberry"];
+// var someFruits = ["Apple", "Orange", "Pear","Peach"];
+// var fruits = someFruits.join('');
 
-for(var index = 0; index < fruits.length; index++)
-{
-    console.log(fruits[index])
-}
+// for(var index = 0; index < fruits.length; index++)
+// {
+//     console.log(fruits[index]);
+// }
 
 // // ternary operator
+
+// Vejeirsitaal
+
+// var myObject = {};
+
+// myObject = {key: "value1",
+//             another: "value2"
+// };
+
+// delete myObject.key;
+// console.log(myObject);
+
+function hello (name)
+{
+    var output = 'Hello ' + name;
+    console.log(output);
+    return output;
+}
+
+hello("Micah");
