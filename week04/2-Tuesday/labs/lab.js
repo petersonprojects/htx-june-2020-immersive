@@ -110,18 +110,45 @@
 //         break;
 // }
 
-for(var i=2;i<20;i+=2)
-{
-    console.log("for: " +i)
-}
+// for(var i=2;i<20;i+=2)
+// {
+//     console.log("for: " +i)
+// }
 
 
-var count = 2;
-while(count <= 20)
-{
-    console.log("while: " +count);
-    count += 2;
-}
+// var count = 2;
+// while(count <= 20)
+// {
+//     console.log("while: " +count);
+//     count += 2;
+// }
 
 
-// ternary operator
+// var lottoNums = [2,true,"string",5.0];
+// lottoNums.push("pushed");
+
+// lottoNums[1]=false;
+
+// lottoNums.pop();
+
+// console.log(lottoNums);
+
+// var days = ["Monday", "Tuesday", "Wednesday","Thursday","Friday","Saturday","Sunday"];
+
+
+// for(var i=0;i<7;i++)
+// {
+//     console.log(days.shift());
+// }
+
+//splice(begin,num of items u want remove) DOES mutates and slice(start,end of slice) does NOT mutate
+
+var lottoNums = [4,8,15,16,23,42]
+
+lottoNums.slice(1,3);
+console.log(lottoNums);
+
+//AGAIN -- SPLICE MUTATES ORIGINAL AND SLICE DOES NOT
+// PARAMETERS ARE ALSO A LITTLE DIFFERENT
+
+// // ternary operator
