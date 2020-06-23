@@ -143,12 +143,18 @@
 
 //splice(begin,num of items u want remove) DOES mutates and slice(start,end of slice) does NOT mutate
 
-var lottoNums = [4,8,15,16,23,42]
+// var lottoNums = [4,8,15,16,23,42]
 
-lottoNums.slice(1,3);
-console.log(lottoNums);
+// lottoNums.slice(1,3);
+// console.log(lottoNums);
 
 //AGAIN -- SPLICE MUTATES ORIGINAL AND SLICE DOES NOT
 // PARAMETERS ARE ALSO A LITTLE DIFFERENT
+
+
+var greeting = "This is a hot and humid day";
+var result = greeting.split(' ')
+console.log(result);
+
 
 // // ternary operator
