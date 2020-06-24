@@ -182,11 +182,10 @@
 // delete myObject.key;
 // console.log(myObject);
 
-function hello (name)
-{
-    var output = 'Hello ' + name;
-    console.log(output);
-    return output;
-}
+// function hello (name)
+// {
+//     var output = 'Hello ' + name;
+//     console.log(output);
+// }
 
-hello("Micah");
+// hello("Micah");
