@@ -6,13 +6,14 @@
 // Print name to the console
 
 
-// Declare a variable called a with a value of 2 
+// Declare a variable called "a" with a value of 2 
 
-//Declare a variable called b witha value of 3 
+//Declare a variable called "b" with a value of 3 
 
 // Declare a variable x whose value is a + b 
 
 // Print x  to the screen 
+
 
 // Add the string "5" to x and print the result
 
