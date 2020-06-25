@@ -10,47 +10,31 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-        <style>
-            .header {
-                background-color: blue;
-
-                color: white;
-                min-height: 200px;
-                text-align: left;
-                padding: 15px;
-
-            }
-        </style>
 </head>
 
 <body>
 
-
-    
-
     <script src="build3.js"></script>
-    <script src="a1.js"></script>
-    <script src="a2.js"></script>
 
     <script>
-        var anchorList = [];
+var anchorList = [];
 
-        var a = createAnchor("#", "Hello World", "nav-item nav-link active");
+var a = createAnchor("#", "Hello World", "nav-item nav-link active");
 
-        anchorList.push(a);
+anchorList.push(a);
 
-        a = createAnchor("#", "Digital Crafts", "nav-item nav-link active small pl-5");
+a = createAnchor("#", "About Us", "nav-item nav-link active small pl-5");
 
-        anchorList.push(a)
+anchorList.push(a)
 
-        a = createAnchor("#", "Bootcamp", "nav-item nav-link small pl-5");
+a = createAnchor("#", "Houston Staff", "nav-item nav-link small pl-5");
 
-        var navbar = buildNavBar("purple", anchorList);
+var navbar = buildNavBar("blue", anchorList);
 
-        var body = document.querySelector('body');
+var body = document.querySelector('body');
 
-        body.appendChild(navbar);
+body.appendChild(navbar);
+
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
