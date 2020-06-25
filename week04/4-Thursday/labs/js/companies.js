@@ -20,16 +20,16 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 //     return arrVal <= 35;
 // })
 
-var youngins = ages.filter((arrVal)=>arrVal <= 35);
+// var youngins = ages.filter((arrVal)=>arrVal <= 35);
 
-// var evens = ages.filter(function(arrVal){
-//     return arrVal%2 == 0;
-// })
+// // var evens = ages.filter(function(arrVal){
+// //     return arrVal%2 == 0;
+// // })
 
-var evens = ages.filter((arrVal)=>arrVal%2 == 0);
+// var evens = ages.filter((arrVal)=>arrVal%2 == 0);
 
-console.log(youngins);
-console.log(evens);
+// console.log(youngins);
+// console.log(evens);
 
 // var filteredArr = arr.filter(function(arrVal){
 //     return arrVal < 25;
@@ -78,5 +78,10 @@ console.log(evens);
 
 // console.log(greetingsArr);
 
+//
+var result = ages.some(function(arrVal){
+    return arrVal < 60;
+})
 
+console.log(result);
 // 
