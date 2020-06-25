@@ -8,7 +8,16 @@ function createAnchor(url, text, style) {
     anchor.textContent = text;
 
     return anchor;
+}
 
+function createRowCol(colorBG, colSize, content)
+{
+    var row = document.createElement('div');
+    row.setAttribute('class', 'row');
+    var bg = 'background-color: ' + colorBG;
+    row.setAttribute('style', bg);
+    row.innerHTML="<div class=\"col-"+colSize +"\">"+content +"</div>";
+    return row;
 }
 
 function buildNavBar(navBGColor, anchorList) {

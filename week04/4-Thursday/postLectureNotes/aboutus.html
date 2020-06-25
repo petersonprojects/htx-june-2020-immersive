@@ -17,25 +17,26 @@
     <script src="build3.js"></script>
 
     <script>
-var anchorList = [];
 
-var a = createAnchor("#", "Hello World", "nav-item nav-link active");
+        var anchorList = [];
 
-anchorList.push(a);
+        var a = createAnchor("#", "Hello World", "nav-item nav-link active");
+        anchorList.push(a);
+        a = createAnchor("#", "About Us", "nav-item nav-link active small pl-5");
+        anchorList.push(a);
+        a = createAnchor("#", "Houston Staff", "nav-item nav-link small pl-5");
+        anchorList.push(a);
 
-a = createAnchor("#", "About Us", "nav-item nav-link active small pl-5");
+        var navbar = buildNavBar("blue", anchorList);
+        var row = createRowCol("blue","12" ,"testing things out");
 
-anchorList.push(a)
-
-a = createAnchor("#", "Houston Staff", "nav-item nav-link small pl-5");
-
-var navbar = buildNavBar("blue", anchorList);
-
-var body = document.querySelector('body');
-
-body.appendChild(navbar);
+        var body = document.querySelector('body');
+        
+        body.appendChild(navbar);
+        body.appendChild(row);
 
     </script>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
