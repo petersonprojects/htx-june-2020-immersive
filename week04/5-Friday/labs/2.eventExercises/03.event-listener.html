@@ -21,6 +21,21 @@
         <!--fadsfa-->
       </form>
     </div>
+
+    <script>
+      //when user enters in a username, check to see how many char in the name
+      //if at least 5 nothing happens but if not 5 char it give them a message
+      var input = document.querySelector('input')
+      var feedback = document.querySelector('#feedback')
+      
+      input.addEventListener('blur', (e) => {
+        if(e.target.value.length < 5)
+        {
+          feedback.textContent = "Username too short"
+        }
+      })
+
+    </script>
     
   </body>
 </html>
