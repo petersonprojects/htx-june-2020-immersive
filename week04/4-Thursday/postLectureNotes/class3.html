@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul>
+        
+    </ul>
+
+
+    <script src ="js/corona.js"></script>
+
+    <script>
+
+        console.log(data)
+
+        var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+        var newDayList = days.map((day) => {
+
+            return `<li>${day}</li>`
+        }
+        )
+
+        var ulNode = document.querySelector('ul');
+
+        console.log(newDayList.join(''))
+
+        ulNode.innerHTML = newDayList
+
+    </script>
+</body>
+
+</html>
