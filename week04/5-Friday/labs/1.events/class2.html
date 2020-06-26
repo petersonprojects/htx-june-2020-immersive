@@ -9,6 +9,19 @@
     
 
     <script>
+        var body = window.document.querySelector('body');
+
+        body.addEventListener('keydown',(e)=>{
+            if(e.key == 'm'){
+                body.style.backgroundColor = 'purple';
+            }
+        })
+
+        body.addEventListener('keyup', (e)=>{
+            if(e.key == 'm'){
+                body.style.backgroundColor = 'white';
+            }
+        })
         
     </script>
 </body>

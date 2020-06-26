@@ -18,10 +18,7 @@
             justify-content: center;
             align-items: center;
             font-size: 30px;
-
         }
-
-        
     
     </style>
 </head>
@@ -30,13 +27,23 @@
 
         <div>
             Big red button
-           
         </div>
 
         <div id="count">
 
         </div>
     </div>
+
+    <script>
+        var bigRedButton = document.querySelector('#big-red-button');
+        var countLabel = document.querySelector('#count');
+        var count = 0;
+        
+        bigRedButton.addEventListener('click',(event) => {
+            count++;
+            countLabel.textContent = count;
+        })
+    </script>
 
 
     
