@@ -11,14 +11,16 @@
 
     <script>
         function sample(){
-            console.log(this);
+            console.log(this); //window object
+        }
+
+        let sample2 = ()=>{
+            console.log(this); //window object
         }
 
         var button = document.querySelector('button');
 
-        button.addEventListener('click', function(){
-            sample();
-        })
+        button.addEventListener('click', sample2);
 
     </script>
 </body>
