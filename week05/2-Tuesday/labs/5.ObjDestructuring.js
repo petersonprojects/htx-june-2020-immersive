@@ -9,7 +9,14 @@ var obj = {
     z: 3
 }
 
-console.log(mult(obj));
+function mult(obj)
+{
+    let product = obj.x * obj.y * obj.z;
+    return product;
+}
+
+var product = mult(obj)
+console.log(product);
 //300
 
 
