@@ -19,7 +19,6 @@ var product = mult(obj)
 console.log(product);
 //300
 
-
 /*
 Create shortPerson() function that will destructure each person object.
 Sample result:
@@ -27,7 +26,6 @@ Sample result:
 
 If input object doesn't have postsQuantitiy field it should get default value 0.
 */
-
 
 var person1 = {
     name: "Mike",
@@ -46,3 +44,21 @@ var person2 = {
     }
 }
 
+
+
+// let person = obj =>{
+//     var {name,info,postsQuantitiy} = obj
+
+//     console.log(name, info, postsQuantitiy);
+// }
+
+// person(person1);
+
+
+function person(obj)
+{
+    var {name: n, info: {}, postsQuantitiy: p} = obj;
+    console.log(name, info, postsQuantitiy);
+}
+
+person(person1)
