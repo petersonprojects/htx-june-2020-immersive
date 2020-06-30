@@ -14,7 +14,7 @@ arr.push(3);
 console.log(arr);
 // [1, 2, 3]
 
-arr = [1, 2, 3, 4];
+arr.push(4);
 
 // BEFORE: Uncaught TypeError:
 // Assignment to constant variable. 
