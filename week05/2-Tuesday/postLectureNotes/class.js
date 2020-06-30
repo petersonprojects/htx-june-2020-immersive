@@ -11,7 +11,15 @@
 
 // console.log(sum);
 
-const name = "Tiger";
-const aged = 13;
+// const name = "Tiger";
+// const aged = 13;
 
-console.log(`My cat is named: ${name} and he's ${aged} years old`);
+// console.log(`My cat is named: ${name} and he's ${aged} years old`);
+
+var text = `
+cat
+dog
+nickelodeon
+
+`
+console.log(text);

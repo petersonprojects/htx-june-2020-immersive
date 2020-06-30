@@ -71,8 +71,9 @@ function test1(obj)
 }
 
 //if u only have one parameter you can remove the parenthesis
-let test2 = obj => {
-    return "hello"
-}
+// aswell as the return
+
+let test2 = obj => "hello"
+
 
 console.log(test2(1));
