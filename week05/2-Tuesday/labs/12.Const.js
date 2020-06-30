@@ -7,14 +7,14 @@ Change one line of code so the error will go away.
 Don't change line 12 or 17
 */
 
-const arr = [1, 2];
+var arr = [1, 2];
 
 arr.push(3);
 
 console.log(arr);
 // [1, 2, 3]
 
-arr.push(4);
+arr = [1,2,3,4];
 
 // BEFORE: Uncaught TypeError:
 // Assignment to constant variable. 
