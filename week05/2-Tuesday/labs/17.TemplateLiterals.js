@@ -18,6 +18,9 @@ var luke = {
     father: 'anakin'
 }
 
-var occupation = luke.occupation;
+// this.luke.occupation is the same as the line below
+
+var {occupation, father} = luke;
 
 console.log(occupation);
+console.log(father);
