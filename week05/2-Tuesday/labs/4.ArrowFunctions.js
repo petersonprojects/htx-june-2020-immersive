@@ -24,3 +24,8 @@ setTimeout(()=>{console.log(mult(5,10))}, 1000);
 // containers etc.
 
 // "this" keyword denotes execution context
+// in js you use a function to instanciate an obj
+
+function sample(){
+    console.log(this);
+}
