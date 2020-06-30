@@ -10,10 +10,12 @@
     <button>sample</button>
 
     <script>
+
         function sample(){
             console.log(this); //window object
         }
 
+        //es6 solved issues with "this"
         let sample2 = ()=>{
             console.log(this); //window object
         }
@@ -23,5 +25,7 @@
         button.addEventListener('click', sample2);
 
     </script>
+    
 </body>
+
 </html>
