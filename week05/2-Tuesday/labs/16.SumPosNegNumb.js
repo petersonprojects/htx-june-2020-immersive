@@ -16,9 +16,20 @@ var nums = [10, -12, 30, -1, -8, 0, 14, -33, 20];
 
 // Write code here
 
-let sumPlusMinus = () =>{
+// let sumPlusMinus = (array) =>{
 
-}
+//     let sumplus = 0;
+//     let summinus = 0;
+//     for(let i = 0;i<array.length;i++)
+//     {
+//         sumnums = (array) => {
+//             return (array[i] >= 0) ? sumplus += array[i]: summinus+= array[i];
+//         }
+
+//         console.log(sumplus);
+//     }
+//     return sumplus;
+// }
 
 console.log(sumPlusMinus(nums));
 // {plus: 74, minus: -54}
