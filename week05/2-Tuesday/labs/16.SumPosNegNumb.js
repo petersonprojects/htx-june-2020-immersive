@@ -12,10 +12,13 @@ it should return an object like this:
 
 */
 
-
 var nums = [10, -12, 30, -1, -8, 0, 14, -33, 20];
 
 // Write code here
+
+let sumPlusMinus = () =>{
+
+}
 
 console.log(sumPlusMinus(nums));
 // {plus: 74, minus: -54}
