@@ -42,8 +42,15 @@
 
 
     <script>
+        let form = document.querySelector('form')
 
-        var email = document.querySelector("#email");
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault();
+            alert('form submitted but not really tho');
+        });
+
+        let email = document.querySelector("#email");
+
         email.addEventListener("input", function (event) {
 
             if (email.validity.typeMismatch) 
