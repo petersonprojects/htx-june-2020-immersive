@@ -68,7 +68,8 @@
 
     <form id="myForm">
         Enter brand: 
-        <input name="brand" type="radio" value="volvo">
+        <input id="hi" name="brand" type="checkbox" value="volvo">
+        <!--radio buttons do a grouping thing when they have the same name-->
         <input name="brand" type="radio" value="saab">
         <input name="brand" type="radio" value="bmw">
 
@@ -79,11 +80,11 @@
     <script>
 
         $(()=>{
+
             $('form').submit((e)=>{
                 e.preventDefault()
-
-                console.log($('input:checked').val())
-                
+                console.log($('#hi').is(':checked')); 
+                //true or false if that selector is checked
             });
 
         });
