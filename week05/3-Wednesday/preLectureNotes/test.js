@@ -1,4 +1,4 @@
-
+//promise examples
 var promise1 = new Promise((resolve, reject) => {
 
     setTimeout(() => {
