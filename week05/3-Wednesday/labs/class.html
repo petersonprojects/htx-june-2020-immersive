@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
+    <!--by default refreshes and gets respectively-->
     <form action="" method="GET">
-
-        <label for="">First Name</label> 
-        <input type="text" name="firstName">
+        <fieldset>
+            <legend>Personal Information</legend>
+        <label for="">Email</label> 
+        <input id="email" type="email" name="email" placeholder="email" required>
         <br>
 
         <label for="">Do you have COVID</label> 
@@ -19,11 +22,43 @@
         <label for="">Do you have insurance</label>
         <input type="checkbox" name="insurance">
         <br>
-        
+
+        <label for="">Number of meals you had today</label>
+        <input type="number" min=0 max=10>
+        <br>
+
+        <label for="">Prefer HTML or CSS?</label>
+        <input type="text" pattern="CSS|HTML">
+        <br>
+
         <label for="">Create Password</label>
-        <input type="password" name="pwd">
+        <input type="password" name="pwd" required minlength="6" maxlength="20">
+        <br>
+
+        </fieldset>
+
 
         <input type="submit">
+
+
+    <script>
+
+        var email = document.querySelector("#email");
+        email.addEventListener("input", function (event) {
+
+            if (email.validity.typeMismatch) 
+            {
+                email.setCustomValidity("Gotta be an e-mail, sweetie honey baby!");
+            }
+
+            else 
+            {
+                email.setCustomValidity("");
+            }
+
+        });
+
+    </script>
 
     </form>
 </body>
