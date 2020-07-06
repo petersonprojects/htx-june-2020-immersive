@@ -21,8 +21,16 @@
                     .done((response)=>{
                         //console.log(response);
 
-                        let $result = $(response).find('.title .business-name')
-                        console.log($result);
+                        let $result = $(response).find('.title, .business-name')
+                        for(let r of $result)
+                        {
+                            try{
+                                console.log(`${r.innerText}`);
+                            }
+                            catch{
+
+                            }
+                        }
                     })
                 })
             })
