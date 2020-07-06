@@ -7,10 +7,13 @@ Rewrite code blow using ES6 Classes
 function Fruit(title, price){
     this.title = title;
     this.price = price;
+
 }
 
+
+
 Fruit.prototype.priceInfo = function() {
-    return `Price of thie ${this.title} is $${this.price}`;
+    return `Price of thi ${this.title} is $${this.price}`;
 
 }
 

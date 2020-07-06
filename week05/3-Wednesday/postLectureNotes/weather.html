@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            color: purple;
+            font-size: 60px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <div>
+
+    </div>
+
+    <script>
+
+        fetch('http://api.openweathermap.org/data/2.5/weather?q=london&appid=9361bd03ec7175e9eea92fdf7a717518')
+        .then(response=>response.json())
+        .then(data=>{
+            console.log(data.main.temp)
+
+            let kelvin = data.main.temp;
+
+            let degC = kelvin - 273.15;
+            let degCInt = Math.floor(degC);
+            console.log(degC)
+            console.log(degCInt)
+
+
+            let degF = degC * 1.8 + 32;
+
+            let degFInt = Math.floor(degF);
+            console.log(degF);
+            console.log(degFInt);
+
+
+            let div = document.querySelector('div');
+
+            div.textContent = `Current Temperature: ${degFInt}F`
+
+
+        })
+        .catch((error)=>{
+            console.log(error)
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

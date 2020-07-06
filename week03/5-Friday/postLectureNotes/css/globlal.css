@@ -1,0 +1,31 @@
+
+
+img{
+    width:100%;
+    height: auto;
+}
+
+.conHeight{
+    height: 600px;
+}
+
+.parallax{
+
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/HoustonSkyline-lg.jpg');
+}
+
+
+.parallax2{
+
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/houstoSkyline-art.jpg');
+}

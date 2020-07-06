@@ -8,14 +8,17 @@ Create new function and use it as a default parameter.
 
 */
 
-function square(a) {
-    console.log(a * a);
+var missingArg = ()=>{
+    throw new Error('Function square requires an argument')
 }
+
+var square = (a = missingArg()) => console.log(a * a);
+
 
 square(10)
 // 100 
 
-square();
+square(9);
 //BEFORE: NaN
 //AFTER: Uncaught Error: Function square requrires an agrument
 

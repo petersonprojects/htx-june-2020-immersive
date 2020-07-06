@@ -39,6 +39,17 @@
     </div>
 
 
+    <script>
+        var bigRedButton = document.querySelector('#big-red-button');
+        var countLabel = document.querySelector('#count');
+        var clickCount = 0;
+
+        bigRedButton.addEventListener('click', (e) => {
+            clickCount +=1;
+            countLabel.textContent = clickCount.toString();
+          
+        })
+    </script>
     
 </body>
 </html>
