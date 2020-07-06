@@ -13,16 +13,21 @@
 
         let num = 1;
         try{
-            num.toUppercase();
+            let url = decodeURI('%%%')
+            console.log(url);
         }
 
         catch(error){
-            console.log(error.message);
+            // executes this specific taks only in the case of a URI Error in the try statement
+            if(error instanceof URIError)
+            {
+                console.log(error);
+            }
         }
 
         finally
         {
-            console.log("Reached the finally statement.");
+            console.log("This always executes.");
         }
 
     </script>
