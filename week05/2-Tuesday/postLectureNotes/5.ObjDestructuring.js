@@ -9,12 +9,28 @@ var obj = {
     z: 3
 }
 
+// code here
+
+// var {x, y, z} = obj; 
+
+// var x = 5; 
+// var y = 20; 
+// var z = 3;
+
+var mult = obj => {
+
+    var {x, y, z} = obj;
+
+    return x * y * z;
+
+}
+
 console.log(mult(obj));
 //300
 
 
 /*
-Create shortPerson() function that will destructure each person object.
+Create Person() function that will destructure each person object.
 Sample result:
 {n: "Mike", c: "Spain", a: 23, p:100}
 
@@ -28,7 +44,7 @@ var person1 = {
         country: "Spain",
         age: 23
     },
-    postsQuantitiy: 100
+    postsQuantity: 100
 }
 
 var person2 = {
@@ -38,4 +54,22 @@ var person2 = {
         age: 25
     }
 }
+
+
+
+
+function person(obj){
+
+    var {name: n, info: {}, postsQuantity: p}  = obj;
+
+    console.log(n);
+
+}
+
+person(person1);
+// console.log(person(person1))
+// //{n: "Mike", c: "Spain", a: 23, p:100}
+
+// console.log(person(person2))
+
 

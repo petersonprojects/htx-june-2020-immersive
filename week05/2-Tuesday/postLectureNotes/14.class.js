@@ -5,6 +5,7 @@ Rewrite code below using ES6 Classes
 
 // class Fruit{
 
+<<<<<<< HEAD
 //     constructor(title,price)
 //     {
 //         this.title = title;
@@ -15,6 +16,18 @@ Rewrite code below using ES6 Classes
 //     {
 //         return `Price of the ${this.title} is $${this.price}`;
 //     }
+=======
+function Fruit(title, price){
+    this.title = title;
+    this.price = price;
+
+}
+
+
+
+Fruit.prototype.priceInfo = function() {
+    return `Price of thi ${this.title} is $${this.price}`;
+>>>>>>> 95d847ef6ce4cccb7a543d24562b54b7322dc952
 
 // }
 

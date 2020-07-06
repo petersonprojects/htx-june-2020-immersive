@@ -1,5 +1,27 @@
+<<<<<<< HEAD
 body{
     margin:0px;
+=======
+
+/*light(white)- #a8dadc
+ accent(red) - #e63946
+ mid(lightBlue)- #a8dadc
+ darker(mediumBlue) - #457b9d
+ darkest(darkBlue) - #1d3557 */
+
+
+.t-White{
+     color: #a8dadc;
+}
+
+.bg-White{
+     background-color: #e63946;
+}
+
+body {
+    margin: 0px;
+
+>>>>>>> 95d847ef6ce4cccb7a543d24562b54b7322dc952
 }
 
 .header{
@@ -10,6 +32,7 @@ body{
 
 .z10{
     z-index: 10;
+    
 }
 .z15{
     z-index: 15;

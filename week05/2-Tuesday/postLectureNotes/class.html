@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button>sample</button>
+    <script>
+
+        
+        function sample() {
+            
+            console.log(this) //window object
+        }
+
+        let sample2 = ()=>{
+            console.log(this); //window
+        }
+
+
+        // sample()
+
+        sample2()
+        var button = document.querySelector('button');
+
+        button.addEventListener('click', sample2);
+        
+    </script>
+</body>
+
+</html>

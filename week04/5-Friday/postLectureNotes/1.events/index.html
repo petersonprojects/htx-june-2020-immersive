@@ -7,7 +7,7 @@
 </head>
 <body>
   <ul>
-    <li><img src="images/ylw.gif" alt="yellow" id="yellow"></li>
+    <li><img src="images/ylw.gif" alt="yellow" id="yellow" ></li>
     <li><img src="images/org.gif" alt="orange" id="orange"></li>
     <li><img src="images/ppl.gif" alt="purple" id="purple"></li>
     <li><img src="images/blu.gif" alt="blue" id="blue"></li>
@@ -18,63 +18,63 @@
     <li><img src="images/red.gif" alt="red" id="red"></li>
   </ul>
 
+  <div id="response">
+
+  </div>
   
   <script>
 
-    // var li = document.getElementById('yellow');
 
-    var ul = document.querySelector('ul')
+    var ul = document.querySelector('ul');
 
-    ul.addEventListener('click', function(event){
-
-      // console.log(event.target.id)
-
-      // if(event.target.id === "pink"){
-      //   console.log("pink clicked")
-      // }
-      // else if(event.target.id === 'orange'){
-      //   console.log("orange clicked")
-      // }
-      // else{
-
-      // }
+    ul.addEventListener('click', (e)=>{
 
 
-      switch(event.target.id){
-        case 'pink':
-          console.log("pink")
+      switch(e.target.id){
+
+        case 'pink': 
+          alert('pink');
           break;
-        case 'orange':
-          console.log('oragne');
-          break; 
+        case 'orange': 
+          alert('orange');
+          break;
         case 'yellow': 
-          console.log('yellow');
+          alert('yellow');
           break;
         case 'green': 
-          console.log('green');
+          alert('green');
           break;
-        default: 
-          console.log('default is going to happen')
+        case 'gray': 
+          alert('gray');
+          break;
+        case 'red': 
+          alert('red');
+          break;
+        case 'blue': 
+          alert('blue');
           break;
       }
-      
+
+      // console.log(e.target.id)
+
+      // console.log('I was clicked')
+
     })
 
-    // li.addEventListener('click', function(){
 
-    //   alert('yellow box clicked')
-    // })
+    // var img = document.querySelector('#orange');
+    // var response = document.querySelector('#response');
 
-    // var li = document.getElementById('yellow');
+    // img.onclick = () => {
 
-    // li.onmouseover = function(){
 
-    //   console.log("Hello everyone")
-    // }
+    //   response.innerHTML = "You've clicked the orange button";
 
-    // function pinkBox(){
-    //   alert('pink box clicked ')
-    // }
+    //   response.setAttribute('style', "background-color:yellow")
+      // alert('orange image clicked')
+    
+    
+
   </script>
 
 </body>
