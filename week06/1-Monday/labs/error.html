@@ -11,13 +11,18 @@
 
     <script>
 
-        let num =1;
+        let num = 1;
         try{
             num.toUppercase();
         }
 
         catch(error){
-            console.log(error);
+            console.log(error.message);
+        }
+
+        finally
+        {
+            console.log("Reached the finally statement.");
         }
 
     </script>
