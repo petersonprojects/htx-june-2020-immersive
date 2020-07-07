@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="demo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis veniam aliquid perspiciatis, laudantium optio
+        architecto iure, sapiente voluptatem, nostrum autem voluptate? Accusamus commodi, mollitia optio saepe sint
+        beatae ad quisquam!
+    </p>
+
+
+    <script>
+
+        let x = 1;
+        try {
+            let url = decodeURI("%%%%");
+            
+        }
+        catch (err) {
+            if (err instanceof URIError){
+                console.log("URI error -  our message:", err.message)
+            }
+            if( err instanceof RangeError){
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
