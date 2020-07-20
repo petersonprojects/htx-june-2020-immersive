@@ -18,7 +18,9 @@ router.get('/speakers',(req,res)=>{
     res.render('speakers',{
         photos: pagePhotos,
         speakers: pageSpeakers,
-        maxlist: pageSpeakers
+        maxlist: pageSpeakers,
+        pageTitle: "Roux Meetups -- Speakers",
+        pageID: "speakerList"
     });
 
 });
@@ -40,7 +42,9 @@ router.get('/speakers/:speakerid',(req,res)=>{
     res.render('speakers',{
         photos: photos,
         speakers: speakers,
-        maxlist: speakerArray
+        maxlist: speakerArray,
+        pageTitle: `Roux Meetups -- ${speakers[0].name}`,
+        pageID: "speakerDetailed"
     });
 
 });
