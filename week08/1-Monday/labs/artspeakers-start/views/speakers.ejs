@@ -2,7 +2,16 @@
 <html>
 
 <head>
-    <title>Roux Meetups--Speakers</title>
+    <% if (speakers.length == 1) { %>
+        <% speakers.forEach(speakerObj => { %>
+            <title>Roux Meetups -- <%= speakerObj.name %>  </title>
+        <% }) %>
+    <% } %>
+
+    <% if (speakers.length > 1) { %>
+        <title>Roux Meetups -- All Speakers</title>
+    <% } %>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -42,11 +51,11 @@
                             <ul class="dropdown-menu">
                                 <li><a href="/speakers">All Speakers</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="/speakers/Lorenzo_Garcia">Lorenzo Garcia</a></li>
 
-                                <li><a href="/speakers/Hillary_Goldwynn">Hilary Goldywynn Post</a></li>
+                                <% maxlist.forEach(speakerObj => { %>
+                                    <li><a href="/speakers/<%= speakerObj.shortname %>"><%= speakerObj.name %></a></li>
+                                <% }) %>
 
-                                <li><a href="/speakers/Riley_Rewington">Riley Rudolph Rewington</a></li>
                             </ul>
                         </li>
                         <li><a href="/feedback">Feedback</a></li>
@@ -86,10 +95,17 @@
 
                                         </a>
 
-                                        <%= speakerObj.summary %> 
+
+                                        <% if (speakers.length == 1) { %>
+                                            <%= speakerObj.description %> 
+                                        <% } %>
+
+                                        <% if (speakers.length > 1) { %>
+                                            <%= speakerObj.summary %> 
+                                        <% } %>
 
                                     </p>
-                                    
+
                                 </div>
 
                             <% }) %>
