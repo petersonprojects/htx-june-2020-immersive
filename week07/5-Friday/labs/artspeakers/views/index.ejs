@@ -96,6 +96,15 @@
                     </ul>
                 </article><!-- article -->
             </aside><!-- secondary -->
+            <aside class="col-sm-4">
+                <div class="pixgrid">
+
+                    <% photos.forEach(image => { %>
+                        <img src="/images/artwork/<%= image %> " alt="">
+                    <% }) %>
+
+                </div>
+            </aside><!-- secondary -->
         </div>
     </div><!-- container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -103,7 +112,7 @@
         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
 
-    <script src="/js/pixgrid.js"></script>
+    <!-- <script src="/js/pixgrid.js"></script> -->
     <!-- <script src="/reload/reload.js"></script> -->
 </body>
 
