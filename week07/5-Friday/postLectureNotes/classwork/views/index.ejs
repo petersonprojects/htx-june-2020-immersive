@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    hey i'm an ejs file!  I'm the home page!
+
+    <br>
+
+    
+    <%= firstName %>  <%= lastName %>
+
+    <%= firstName %> 
+
+
+    <% if (pic.length > 0){ %>
+
+        <% for(let i = 0; i< pic.length; i++){ %>
+            <img src="<%= pic[i] %>" height="300px" alt="">
+        <%} %>
+    <%}%>
+    
+
+    <% for( let index = 0; index < nameRef.length; index++ ) { %>
+    
+            <h2 class="highlight"><%= nameRef[index] %></h2>
+    <% } %>
+
+    <!-- <img src="<%= pic[0] %>" height="300px" alt="">
+    <img src="<%= pic[1] %>" height="300px" alt="">
+    <img src="<%= pic[2] %>" height="300px" alt=""> -->
+
+
+    <!-- <script>
+
+        let pic = [4, 6, 8, 9]
+        //pic is an array  
+
+        if (pic.length > 0){
+
+            for(let i = 0; i< pic.length; i++){
+                <img src="pic[i]" height="300px" alt="">
+            }
+        }
+    </script> -->
+
+     
+    
+</body>
+
+</html>
