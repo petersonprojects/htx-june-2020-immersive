@@ -24,7 +24,9 @@ router.get('/', (req, res) => {
 
     res.render('index', {
         pageTitle :"Art speakers",
-        artworkImages : pagePhotos
+        artwork : pagePhotos,
+        pageID: 'home',
+        maxList: pageSpeakers
     })
 })
 
