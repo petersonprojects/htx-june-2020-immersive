@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/aboutus', (req,res)=>{
 
-    res.send('ABOUT US hello')
+    res.send('ABOUT US get')
 });
 
 router.post('/aboutus', (req,res)=>{

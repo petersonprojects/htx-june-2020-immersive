@@ -3,25 +3,37 @@
 //
 const express = require('express');
 const router = express.Router();
+const bodyParser = require('body-parser');
+
+router.use(bodyParser.urlencoded({extended: false}));
+router.use(bodyParser.json());
 
 router.get('/', (req,res)=>{
 
-    res.send('hello')
+    res.render('index',{
+
+    });
+
 });
 
 router.post('/', (req,res)=>{
+    //display response on index.ejs
 
-    res.send('post request')
+    let username = req.body.username;
+    let password = req.body.password;
+
+    res.json(`username: ${username}<br> password: ${password} <br>`)
+
 });
 
 router.put('/', (req,res)=>{
 
-    res.send('put request')
+    res.send('put request');
 });
 
 router.delete('/', (req,res)=>{
 
-    res.send('delete request')
+    res.send('delete request');
 });
 
 module.exports = router;
