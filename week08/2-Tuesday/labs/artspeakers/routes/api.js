@@ -46,4 +46,22 @@ router.post('/api',(req,res)=>{
 
 });
 
+router.delete('/api', (req,res) => {
+
+    let ID = req.body.id;
+
+    console.log(ID);
+
+    feedback.slice(ID, ID+1);
+
+    fs.writeFile('./data/feedback.json', JSON.stringify(feedback), 'utf8', (err)=>{
+        if(err)
+        {
+            console.log(err)
+        }
+    });
+
+    res.json(feedback);
+});
+
 module.exports = router;

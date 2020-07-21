@@ -54,4 +54,22 @@ $(()=>{
         
     });
 
+    $('.feedback-delete').click((e)=>{
+
+        console.log('im here');
+
+        for(let id = 0; i<data.length; i++)
+        {
+            if(e.id == id)
+            {
+                $(`#${id}`).remove();
+            }
+        }
+
+        $.delete('/api', {
+            data: id
+        }, updateFeedback)
+
+    });
+
 });
