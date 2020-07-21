@@ -2,12 +2,11 @@
 
 $(()=>{
 
-    //make an api call to the endpoint: /api
+    let updateFeedback = (data) => {
 
-    $.getJSON('/api')
-    .done((data)=>{
+        // log the feedback data object with the updated list
         console.log(data);
-
+        
         // in the $.each function we
         // take our data and display in the recent feedback
         // this is same as data.forEach(item =>{})
@@ -36,9 +35,12 @@ $(()=>{
         // through all of the data from fetch call
 
         $('.feedback-messages').html(output);
-    })
 
-    //post request to post data back to server
+    }
+
+    //make an api call to the endpoint: /api
+    // omits the .done statement
+    $.getJSON('/api', updateFeedback);
 
     $('.feedback-form').submit((e)=>{
 
@@ -48,13 +50,8 @@ $(()=>{
             name: $('#feedback-form-name').val(),
             title: $('#feedback-form-title').val(),
             message: $('#feedback-form-message').val()
-        })
-        .done((data)=>{
-            console.log(data);
-        })
+        }, updateFeedback)
         
-
     });
 
-
-})
+});

@@ -2,6 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
+
 const fs = require('fs');
 
 //use this to read data send from browser header file
@@ -28,15 +29,21 @@ router.post('/api',(req,res)=>{
 
     console.log(req.body);
 
-    let name = req.body.name;
-    let title = req.body.title;
-    let message = req.body.message;
+    // let name = req.body.name;
+    // let title = req.body.title;
+    // let message = req.body.message;
 
-    res.send(`${name}, ${title}, ${message}`)
+    feedback.unshift(req.body);
 
-    // fs.writeFile(dataFile, ()=>{
+    fs.writeFile('./data/feedback.json', JSON.stringify(feedback), 'utf8', (err)=>{
+        if(err)
+        {
+            console.log(err)
+        }
+    });
 
-    // })
-})
+    res.json(feedback);
+
+});
 
 module.exports = router;
