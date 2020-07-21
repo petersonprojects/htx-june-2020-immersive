@@ -3,8 +3,28 @@ $(()=>{
 
     //make an api call the endpoint: /api 
 
-    $.getJSON('/api')
-    .done((data)=>{
+    
+
+    $.getJSON('/api', updateFeedback)
+
+
+    
+    $('.feedback-form').submit(e =>{
+
+        e.preventDefault();
+        console.log('submitted form')
+        //post request to post data back to server 
+
+        $.post('/api', {
+            name: $('#feedback-form-name').val(),
+            title: $('#feedback-form-title').val(),
+            message: $('#feedback-form-message').val()
+        }, updateFeedback)
+        
+    })
+    
+
+    function updateFeedback(data){
         console.log(data);
 
         //take our data and display in the recent feedback
@@ -32,26 +52,6 @@ $(()=>{
         // through all of the data from fetch call
         $('.feedback-messages').html(output)
 
-    })
-
-
-    $('.feedback-form').submit(e =>{
-
-        e.preventDefault();
-        console.log('submitted form')
-        //post request to post data back to server 
-
-        $.post('/api', {
-            name: $('#feedback-form-name').val(),
-            title: $('#feedback-form-title').val(),
-            message: $('#feedback-form-message').val()
-        })
-        .done((data)=>{
-            console.log(data);
-        })
-        
-    })
-    
-
+    }
 
 })
