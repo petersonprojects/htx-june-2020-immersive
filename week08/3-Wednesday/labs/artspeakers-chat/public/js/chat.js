@@ -30,6 +30,9 @@ socket.on('connect', ()=>{
             });
 
             // clear fields when user hits send
+            chatUsername.value = "";
+            chatMessage.value = "";
+
         }); //end of form event listener
 
     //listen to incoming messages from server
@@ -61,4 +64,5 @@ function showMessage(data)
 
     newMessage.innerHTML = '<strong>' + data.username + '</strong>: ' + data.message;
     chatDisplay.insertBefore(newMessage, chatDisplay.firstChild);
+
 }
