@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    
+    <form action="">
+
+        <input type="text" id="chat">
+
+        <input type="submit">
+
+    </form>
+
+    <ul id="messages">
+        
+    </ul>
+
+    <!-- socket io cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+
+    <script>
+        const socket = io();
+
+        // find the form in the body
+        let form = document.querySelector('form');
+        // attach an event listener to the form
+        form.addEventListener('submit',(e)=>{
+
+            e.preventDefault(); //so it doesn't reload on submit
+
+
+            // find the input field
+            let chat = document.getElementById('chat');
+
+            // get contents of message (chat.value)
+            // emit message back to the server
+            socket.emit('msgFromClient', chat.value);
+
+        })
+
+
+        // receive msg from server
+        // find the message ul tag
+        // insert the new broadcasted message inside of element
+
+        socket.on('msgFromServer', (serverMessage)=>{
+
+            let messages = document.getElementById('messages');
+
+            // appending all messages from the server
+            // serverMessage is last broadcasted message from server
+            let liTags = messages.innerHTML + `<li>${serverMessage}</li>`
+
+            messages.innerHTML = liTags;
+
+        });
+
+        //connect to server
+        // socket.on('connect', (data)=>{
+
+        //     socket.on('chatMessage', (serverMessage)=>{
+        //         console.log(serverMessage);
+
+        //         socket.emit('msgFromClient',{data: "This is message from the front end"});
+                
+        //     });
+
+        // });
+
+    </script>
+
+</body>
+
+</html>
