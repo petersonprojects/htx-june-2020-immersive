@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 
+// establish chat socket server
 const socketServer = require('socket.io');
 
 // link to public folder 
@@ -36,7 +37,7 @@ io.on('connect', (socket)=>{
 
         // server will broadcast msg out to all connected clients
         io.emit('chat room', msg);
-        
+
     });
 
 });
