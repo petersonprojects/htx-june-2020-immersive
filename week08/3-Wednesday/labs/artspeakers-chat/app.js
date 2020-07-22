@@ -36,6 +36,7 @@ io.on('connect', (socket)=>{
     socket.on('chat room', (msg)=>{
 
         // server will broadcast msg out to all connected clients
+        console.log(msg);
         io.emit('chat room', msg);
 
     });
