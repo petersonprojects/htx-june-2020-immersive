@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <%- include('partials/template/head.ejs')  %> 
+
+</head>
+
+<body id="speakerList">
+    <%- include('partials/content/header.ejs')  %> 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <article class="speakerslist ">
+                    <div class="container">
+                        <div class="row">
+
+                            <% speakers.forEach(speakerObj => { %>
+                             
+                            
+                            <div class="col-sm-8 ">
+                                <h3 class="speakerslist-title"><%= speakerObj.title %> </h3>
+                                <h5 class="speakerslist-name">with <a href="/speakers/<%= speakerObj.shortname %> "><%= speakerObj.name %> </a>
+                                </h5>
+                                <p class="speakerslist-info">
+                                    <a href="/speakers/<%= speakerObj.shortname %> ">
+
+
+
+
+                                        <img class="speakerslist-img img-circle pull-left"
+                                            src="/images/speakers/<%= speakerObj.shortname %>_tn.jpg"     
+                                            alt="Photo of <%= speakerObj.name %> "></a>
+
+                                    </a>
+
+
+                                    </a>
+
+
+
+                                    <%= speakerObj.summary %> 
+
+
+                                </p>
+                            </div>
+
+                            <% }) %>
+
+                        </div><!-- row -->
+                    </div><!-- container -->
+                </article>
+            </div><!-- primary -->
+            <aside class="col-sm-4">
+                <article class="sidebar">
+                    <h1 class="sidebar-title">Artwork on display</h1>
+                    <p class="sidebar-body">While you attend the conference, head over to our gallery where you can
+                        check out some of the work from our speakers.</p>
+                    
+                        <%- include('partials/content/artwork.ejs')  %> 
+                </article>
+            </aside><!-- secondary -->
+        </div>
+    </div><!-- container -->
+    
+    <%- include('partials/template/jsdefaults.ejs')  %> 
+
+</body>
+
+</html>
