@@ -41,8 +41,6 @@ router.get('/speakers/:speakerid', (req, res) => {
 
     })
 
-    // console.log(`photos: ${photos} speaker object: ${pageSpeakers}`);
-
     res.render('speakers', {
         artwork: photos,
         speakers: speakers,
