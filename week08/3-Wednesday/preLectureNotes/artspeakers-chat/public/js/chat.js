@@ -5,16 +5,16 @@ console.log('hello');
 var chatUserName = document.querySelector('#chat-username');
 var chatMessage = document.querySelector('#chat-message');
 
-socket.on('connect', ()=>{
+socket.on('connect', () => {
 
 
     let chatForm = document.forms.chatForm;
 
-    if(chatForm){
+    if (chatForm) {
 
         //add event listener to form
-        
-        chatForm.addEventListener('submit', (e)=>{
+
+        chatForm.addEventListener('submit', (e) => {
 
             e.preventDefault();
 
@@ -28,16 +28,16 @@ socket.on('connect', ()=>{
 
         }) //end of form event listener
 
-        
+
         //listen to incoming messages from server 
-        socket.on('chat room', (msgFromServer)=>{
+        socket.on('chat room', (msgFromServer) => {
             // {username:value, message:value}
             console.log(`msg frm serve ${msgFromServer}`);
             showMessage(msgFromServer);
         })
-            
 
-            //clear field fields out
+
+        //clear field fields out
     }
 })  //end of socketio
 
@@ -45,14 +45,15 @@ socket.on('connect', ()=>{
 function showMessage(data) {
     console.log(`data ${data}`);
     var chatDisplay = document.querySelector('.chat-display');
+    console.log(chatUserName);
     var newMessage = document.createElement('p');
-  
-    // if (chatUsername.value == data.username) {
-    //   newMessage.className = 'bg-success chat-text';
-    // } else {
-    //   newMessage.className = 'bg-info text-warning chat-text';
-    // }
-  
+
+    if (chatUserName.value == data.username) {
+      newMessage.className = 'bg-success chat-text';
+    } else {
+      newMessage.className = 'bg-info text-warning chat-text';
+    }
+
     newMessage.innerHTML = '<strong>' + data.username + '</strong>: ' + data.message;
     chatDisplay.insertBefore(newMessage, chatDisplay.firstChild);
-  }
+}
