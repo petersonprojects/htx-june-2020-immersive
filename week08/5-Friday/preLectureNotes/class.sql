@@ -63,12 +63,71 @@
 -- FULL OUTER JOIN 
 --     articles ON author.id = articles.author_id;
 
-SELECT 
-    name, count(articles.id)
-FROM 
-    author 
-FULL OUTER JOIN 
-    articles ON author.id = articles.author_id
-GROUP BY
-    author.id;
+-- SELECT 
+--     name, count(articles.id)
+-- FROM 
+--     author 
+-- FULL OUTER JOIN 
+--     articles ON author.id = articles.author_id
+-- GROUP BY
+--     author.id;
 
+
+
+-- INSERT INTO groups VALUES
+-- (DEFAULT, 'Houston JS Meetup'),
+-- (DEFAULT, 'PyLadies'),
+-- (DEFAULT, 'Girl Develop It'),
+-- (DEFAULT, 'Houston Web Design Group');
+
+
+
+-- INSERT INTO member VALUES
+-- (DEFAULT, 'Michael'),
+-- (DEFAULT, 'Dan'),
+-- (DEFAULT, 'Woody'),
+-- (DEFAULT, 'Micah'),
+-- (DEFAULT, 'RJ'),
+-- (DEFAULT, 'Chris'),
+-- (DEFAULT, 'Jeremy'),
+-- (DEFAULT, 'Cainan'),
+-- (DEFAULT, 'Daniel');
+
+
+-- MANY TO MANY RELATIONSHIP TABLE
+-- RELATES GROUP TO MEMBER
+
+-- CREATE TABLE membership(
+
+--     id SERIAL PRIMARY KEY,
+--     group_id integer REFERENCES groups(id),
+--     member_id integer REFERENCES member(id)
+
+-- );
+
+-- INSERT INTO membership VALUES
+-- (DEFAULT, 1, 1),
+-- (DEFAULT, 1, 2),
+-- (DEFAULT, 1, 4),
+-- (DEFAULT, 1, 6),
+-- (DEFAULT, 2, 1),
+-- (DEFAULT, 2, 2),
+-- (DEFAULT, 2, 7),
+-- (DEFAULT, 3, 1),
+-- (DEFAULT, 3, 8),
+-- (DEFAULT, 3, 4),
+-- (DEFAULT, 4, 1),
+-- (DEFAULT, 4, 3);
+
+-- GOOD MANY TO MANY EXAMPLE
+
+SELECT 
+    member, name
+FROM
+    groups
+INNER JOIN
+    membership ON groups.id = group_id
+INNER JOIN 
+    member ON member.id = member_id
+WHERE 
+    member.id = 3;
