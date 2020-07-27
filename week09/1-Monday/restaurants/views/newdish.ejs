@@ -12,10 +12,12 @@
 
     <form action="/newdish" method="POST">
 
-        <select name="">
-            <option value="">option 1</option>
-            <option value="">option 1</option>
-            <option value="">option 1</option>
+        <select name="category">
+
+            <% categories.forEach(record => { %>
+                <option value="<%= record.id %>"><%= record.name %></option>
+            <% }) %>
+
         </select>
 
         <br>
