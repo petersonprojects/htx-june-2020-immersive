@@ -73,6 +73,7 @@
 --     author.id;
 
 
+<<<<<<< HEAD
 
 -- INSERT INTO groups VALUES
 -- (DEFAULT, 'Houston JS Meetup'),
@@ -98,6 +99,67 @@
 -- RELATES GROUP TO MEMBER
 
 -- CREATE TABLE membership(
+=======
+-- CREATE TABLE groups (
+
+--     id SERIAl PRIMARY KEY,
+--     name varchar(100)
+-- );
+
+
+-- INSERT INTO groups VALUES 
+-- ( DEFAULT, 'Houston Javascript Meetup'),
+-- ( DEFAULT, 'PyLadies'),
+-- ( DEFAULT, 'Girl Develop It'),
+-- ( DEFAULT, 'Houston Web Desigh Group');
+
+
+-- CREATE TABLE member (
+--     id SERIAL PRIMARY KEY,
+--     memeber varchar(50)
+-- );
+
+
+-- INSERT INTO member VALUES 
+-- ( DEFAULT, 'Michael'),
+-- ( DEFAULT, 'Dan'),
+-- ( DEFAULT, 'Woody'),
+-- ( DEFAULT, 'Michah'),
+-- ( DEFAULT, 'RJ'),
+-- ( DEFAULT, 'Jeremy'),
+-- ( DEFAULT, 'Chris'),
+-- ( DEFAULT, 'Cainan');
+
+-- CREATE TABLE membership (
+--     id SERIAL PRIMARY KEY,
+--     group_id integer REFERENCES groups(id),
+--     member_id integer REFERENCES member(id)
+-- );
+
+-- INSERT INTO membership VALUES
+-- (DEFAULT, 1, 1),
+-- (DEFAULT, 1, 2),
+-- (DEFAULT, 1, 6),
+-- (DEFAULT, 1, 7),
+-- (DEFAULT, 1, 8),
+-- (DEFAULT, 2, 1),
+-- (DEFAULT, 2, 2),
+-- (DEFAULT, 3, 4),
+-- (DEFAULT, 3, 1),
+-- (DEFAULT, 4, 1),
+-- (DEFAULT, 4, 3);
+
+
+SELECT 
+    member, name
+FROM 
+    groups 
+INNER JOIN 
+    membership ON groups.id = group_id 
+INNER JOIN 
+    member ON member.id  = member_id
+WHERE member.id = 1 ;
+>>>>>>> 7d373b743286b890a320f4b34fe5037175b52d8e
 
 --     id SERIAL PRIMARY KEY,
 --     group_id integer REFERENCES groups(id),
