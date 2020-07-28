@@ -1,8 +1,7 @@
 
-
 var addButton = document.getElementById('addButton');
 
-let todos = document.getElementById('todoList');
+var todos = document.getElementById('todoList');
 
 // description of what is going to be added/posted .value .val() in JQuery
 var itemInput = document.getElementById('itemInput');
@@ -46,9 +45,9 @@ addButton.addEventListener('click', (e)=>{
         todos.innerHTML = html;
 
         itemInput.value = "";
-    })
+    });
 
-})
+});
 
 
 //function to change the dom of the list of todo list
