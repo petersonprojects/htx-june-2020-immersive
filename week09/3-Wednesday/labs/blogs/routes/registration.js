@@ -1,7 +1,8 @@
 
 const express = require('express');
 const router = express.Router();
-
+const bcrypt = require('bcryptjs');
+const db = require('../models');
 
 router.get('/registration', (req,res) => {
     res.render('registration.ejs');
@@ -13,9 +14,20 @@ router.post('/registration', (req,res) => {
     let password = req.body.username;
     let email = req.body.email;
 
-    console.log(username, password, email);
+    let passwordEncrypted = bcrypt.hashSync(password, 8);
 
-    res.send('post registration data');
+    db.users.create({
+        username: username,
+        email: email,
+        password: passwordEncrypted,
+        roleID: 1
+    })
+    .then((user)=>{
+        res.redirect('/login');
+    })
+    .catch((err)=>{
+        res.redirect('/error');
+    });
 
 });
 

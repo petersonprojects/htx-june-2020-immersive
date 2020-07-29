@@ -30,6 +30,10 @@ app.use(require('./routes/registration.js'));
 app.use(require('./routes/protected.js'));
 
 
-app.listen(3005, ()=>{
-    console.log('Listening on port 3005');
+app.get('/error', (req,res) => {
+    res.send(`You've reached an error.`)
+});
+
+app.listen(3008, ()=>{
+    console.log('Listening on port 3008');
 });
