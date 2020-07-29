@@ -20,6 +20,7 @@ app.use(session({
     saveUninitialized:true,
     cookie: {secure: false, maxAge: 14*24*60*60*1000} //days, hours, minutes, seconds, millisecs
 }));
+
 // ^^ this session is actually returning a function ^^
 //      which has a request a response and a next
 //      when next is called it runs the next chunk of middleware
@@ -28,7 +29,7 @@ let authLogin = (req, res, next) => {
 
     // check session username
 
-    // console.log("I'm middleware.");
+    // console.log("I'm middleware.")
 
     if(req.session.username)
     {
