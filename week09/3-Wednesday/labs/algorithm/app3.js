@@ -1,5 +1,6 @@
 
-// make authentication :-)
+//  authentication :-)
+// encryption, sessions and middleware
 
 let express = require('express');
 let app = express();
@@ -99,8 +100,6 @@ app.post('/login', (req,res) => {
         console.log('Login failed.');
         res.redirect('/login');
     }
-
-    // res.send('stuff');
 
 });
 
