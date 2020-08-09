@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
+const authReq = require('../auth');
 
 
+router.get('/admin', authReq, (req, res) => {
 
-router.get('/admin', (req, res) => {
-
+    res.send('protected admin route')
 })
 
 

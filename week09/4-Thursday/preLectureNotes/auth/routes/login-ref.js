@@ -37,7 +37,7 @@ passport.use(new LocalStrategy((username, password, done) => {
                     if (response) {
                         console.log('passwords matched');
 
-                        //serizalize user gets called here
+                        //serialize user gets called here
                         done(null, { id: record.id, username: record.username })
                     }
                     else {
@@ -54,20 +54,6 @@ passport.use(new LocalStrategy((username, password, done) => {
         })
 }))
 
-passport.serializeUser((user, done) => {
-    // passport is adding information to the sessions
-    console.log('serializing user')
-    done(null, user.id)
-})
 
-passport.deserializeUser((id, done) => {
-    //checking to see if user is valid with the cookie that was passed in.
-    console.log('deserializing user')
-    console.log(id);
-    db.users.findByPk(id)
-        .then((record) => {
-            done(null, record)
-        })
-})
 
 module.exports = router;

@@ -1,15 +1,16 @@
 
-let passport = require('passport');
+// let passport = require('passport');
+const passport = require('./passport-instance');
 const LocalStrategy = require('passport-local').Strategy
 const bcrypt = require('bcryptjs')
 let db = require('../models');
 
 
-const init = (req, res, next)=>{
+const init = (passport)=>{
 
 
-    let username = req.body.username;
-    let password = req.body.password;
+    // let username = req.body.username;
+    // let password = req.body.password;
 
     passport.use(new LocalStrategy((username, password, done) => {
         console.log(`I'm in passport`);
@@ -58,7 +59,7 @@ const init = (req, res, next)=>{
             })
     })
 
-    next();
+    // next();
 }
 
 module.exports = init;
