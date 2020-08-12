@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script type="text/babel" src="Name.js"></script>
+
+    <script type="text/babel">
+
+        let markup = <div>
+                    <h1>Hello world</h1>
+                    <p>This is an example of JSX
+                    <h2>This is a child of p tag</h2>
+                    </p>
+                    <Name />
+                    <Name />
+                    <Name />
+                    <Name />
+                    <Name />
+                    <Name />
+                    <Name />
+            </div>
+
+        ReactDOM.render(markup, document.getElementById('root'));
+        
+    </script>
+</body>
+
+</html>
