@@ -1,11 +1,13 @@
 import React from 'react'
 import Grandchild from './Grandchild'
 
-const Child = () => {
+const Child = (props) => {
   return (
     <>
       I'm a child <br />
-      <Grandchild />
+      I'm also a parent and my name is {props.name}
+
+      <Grandchild name="Carlos" />
 
     </>
   )

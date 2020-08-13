@@ -1,0 +1,43 @@
+
+.keypad{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightgray;
+    color: #666666;
+    margin:5px;
+    font-size: 30px;
+}
+
+.window{
+    width: 310px;
+    height: 70px;
+    color: white;
+    background-color: darkgray;
+    margin-left:5px;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.calcStyle{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 70px;
+}
+
+.zero{
+    margin: 5px;
+    width: 150px
+
+}
+
+.specialKey{
+    background-color: orange;
+    font-weight: bold;
+}

@@ -1,15 +1,24 @@
 import React from 'react';
 import Name from './Name';
-import Parent from './Ex1/Parent'
+import Parent from './Ex1/Parent';
+import List from './List';
+import SimpleList from './SimpleList';
+import Cards from './cards/Cards';
+import Calculator from './calculator/Calculator';
 
 
 //{firstName: value}
 const App = () => {
   return (
     <>
+      <Calculator />
+      {/* <Cards /> */}
+      {/* <SimpleList /> */}
 
-      <Parent />
-      
+
+      {/* <List /> */}
+      {/* <Parent name="Francisco" /> */}
+
       {/* <Name firstName="Cainan"/> 
       <Name firstName="Dan"/> 
       <Name firstName="Woody"/> 
