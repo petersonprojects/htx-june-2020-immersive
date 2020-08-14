@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import Stepper from './Stepper';
+import {Row, Col, Container} from 'react-bootstrap'
 
 class Puppies extends Component {
 
@@ -31,19 +32,34 @@ class Puppies extends Component {
     render() {
 
         let movies = this.state.movies.map((movie, index) => {
-            return <div>
+            return <div key={index}>
                 <h1>{movie.title}</h1>
-                <img key={index} src={`https://raw.githubusercontent.com/RyanHemrick/star_wars_movie_app/master/public/images/${movie.poster}`}/>
-                <p>{movie.description}</p>
-                <Stepper/>
+
+                <Row className="justify-content-center">
+
+                    <Col>
+                        <img height="300px" src={`https://raw.githubusercontent.com/RyanHemrick/star_wars_movie_app/master/public/images/${movie.poster}`}/>
+                    </Col>
+
+                    <Col>
+                        <p>{movie.description}</p>
+                    </Col>
+                    
+                </Row>
+
+
+                <Row className="justify-content-center">
+                    <Stepper key={index}/>
+                </Row>
             </div>
         });
 
         return (
             <>
 
-
-                {movies}
+                <Container>
+                    {movies}
+                </Container>
 
             
             </>

@@ -9,6 +9,7 @@ import ContactUs from './Components/ContactUs';
 import Blogs from './Components/Blogs';
 import Stepper from './Components/Stepper';
 import Puppies from './Components/Puppies';
+import Todo from './Components/Todo';
 
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -30,6 +31,7 @@ ReactDOM.render(
         <Route path="/contactus" component={ContactUs}/>
         <Route path="/stepper" component={Stepper}/>
         <Route path="/puppies" component={Puppies}/>
+        <Route path="/todo" component={Todo}/>
 
         <Route exact path="/blogs" component={Blogs}/>
         <Route path="/blogs/:blogsID" component={Blogs}/>

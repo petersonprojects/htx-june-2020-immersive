@@ -10,6 +10,10 @@ body {
     border-radius: 5px;
   }
   
+  .heder{
+    color:white;
+  }
+
   .todo-form input {
     background-color: rgb(27,112,137);
     border: 0;

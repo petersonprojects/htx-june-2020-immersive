@@ -1,5 +1,6 @@
 import React from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -13,10 +14,12 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
 
             <Nav className="ml-auto">
-                <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/aboutus">About Us</Nav.Link>
-                <Nav.Link href="/blogs">Blogs</Nav.Link>
-                <Nav.Link href="/contactus">Contact Us</Nav.Link>
+                <Link className="heder" to="/">Home</Link>
+                <Link className="heder" to="/aboutus">About Us</Link>
+                <Link className="heder" to="/blogs">Blogs</Link>
+                <Link className="heder" to="/contactus">Contact Us</Link>
+                <Link className="heder" to="/puppies">Movies</Link>
+                <Link className="heder" to="/todo">Todos</Link>
             </Nav>
 
         </Navbar.Collapse>
