@@ -13,7 +13,6 @@ class App extends Component {
     this.state = {
       count: 0
     }
-
   }
 
   updateCount = () =>
@@ -50,7 +49,7 @@ class App extends Component {
     )
 
   }
-  
+
 }
 
 export default App;
