@@ -16,7 +16,8 @@ class App extends Component {
 
   componentDidMount = async () => {
 
-    try{
+    try
+    {
 
       let response = await fetch('https://randomuser.me/api');
 
@@ -31,7 +32,8 @@ class App extends Component {
       })
 
     }
-    catch{
+    catch
+    {
       console.log(`no response from api.`)
     }
 
@@ -52,7 +54,7 @@ class App extends Component {
         {arr.map(a => ` ${a * 3}`)}
 
         <br/>
-        
+
         <button onClick={()=>this.setState({count: count+1})}>Click</button>
 
         <br/>
