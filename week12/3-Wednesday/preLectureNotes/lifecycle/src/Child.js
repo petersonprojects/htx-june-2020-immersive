@@ -50,6 +50,13 @@ class Child extends Component {
         // }
 
     }
+
+    componentWillUnmount = () => {
+
+        // used for clean up on component
+        console.log(`component will unmount`);
+    }
+    
     
 
     // static getSnapshotBeforeUpdate(prevProps, prevState){

@@ -18,7 +18,8 @@ class App extends Component {
   
     this.state = {
       isLoaded: false,
-      sendingChildData: 4
+      sendingChildData: 4,
+      loadChild: true
     }
   }
 
@@ -44,7 +45,7 @@ class App extends Component {
 
   handleClick = () => {
     this.setState({
-      sendingChildData: this.state.sendingChildData + 1
+      loadChild: !this.state.loadChild
     })
   }
 
@@ -60,9 +61,19 @@ class App extends Component {
         <>
           Home page
           <br/><br/>
-          <Child data={this.state.sendingChildData} />
+
+
+
+          {/* <Child data={4} /> */}
+
+          {
+            this.state.loadChild ? <Child data={4} /> : null // null is unmounting the child from the dom
+          }
+
+
           <br/> <br/>
-          <button onClick={this.handleClick}>Click</button>
+          {/* <button onClick={this.handleClick}>Click</button> */}
+          <button onClick={this.handleClick}>Load Child</button>
         </>
       )
     }
