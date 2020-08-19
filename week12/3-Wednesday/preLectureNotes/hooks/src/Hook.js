@@ -21,9 +21,7 @@ const Hook = () => {
 
             setImgURL(picURL);
         })
-        //   return () => {
-        //     effect
-        //   };
+
     }, [])
 
     // acts as a componentDidUpdate
