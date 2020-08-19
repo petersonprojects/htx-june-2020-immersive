@@ -12,15 +12,17 @@ const Hook = () => {
             <h1>{title}</h1>
 
             {count}
-            
+
             <br/>
 
             {arr.map(a => <li> {a * 3}</li>)}
 
             <br/>
+
             <button onClick={()=>setArr([...arr, 4])}>Push to Array</button>
 
             <br/>
+            
             <button onClick={()=>setCount(count + 1)}>Click - Hooks</button>
             <button onClick={()=>setTitle(title + "s")}>Pluralize Title</button>
 
