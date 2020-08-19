@@ -20,8 +20,8 @@ class Child extends Component {
 
 
         console.log(`incoming prop ${nextProps.data} current prop: ${this.props.data}`)
-        return !(nextProps.data == this.props.data)
-
+        // return !(nextProps.data == this.props.data)
+        return true;
 
     }
 
@@ -31,7 +31,7 @@ class Child extends Component {
         // happens after the rendering happens
         // component did mount only happens ONCE
         // this happens every single time the render function is executed
-        
+        console.log(`previous props data: ${prevProps.data} current props: ${this.props.data}`)
     }
     
 
