@@ -9,20 +9,28 @@ const Hook = () => {
     const [imgURL, setImgURL] = useState("");
 
 
+    // use Effect has two arguments the second argument is the dependencies
+    // this acts like component did mount [] no dependencies
     useEffect(() => {
-      return () => {
-        effect
-      };
-    }, [input])
 
-    // fetch('https://randomuser.me/api')
-    // .then(response => response.json())
-    // .then(data => {
+        fetch('https://randomuser.me/api')
+        .then(response => response.json())
+        .then(data => {
 
-    //     let picURL = data.results[0].picture.large;
+            let picURL = data.results[0].picture.large;
 
-    //     setImgURL(picURL);
-    // })
+            setImgURL(picURL);
+        })
+        //   return () => {
+        //     effect
+        //   };
+    }, [])
+
+    // acts as a componentDidUpdate
+    // gets called after every render
+    useEffect(()=>{
+        console.log('Im a useEffect function')
+    })
 
 
 
@@ -31,7 +39,7 @@ const Hook = () => {
         <>
             <h1>{title}</h1>
             <br/>
-            {/* <img src={imgURL} alt="rando"/> */}
+            <img src={imgURL} alt="rando"/>
             <br/>
 
             {count}

@@ -46,6 +46,10 @@ class App extends Component {
     return (
       <>
         <h1>{title}</h1>
+        <br/>
+
+        <img src={imgURL} alt="randopic"/>
+        <br/>
 
         {count}
 
@@ -63,7 +67,6 @@ class App extends Component {
 
         <br/>
 
-        <img src={imgURL} alt="randopic"/>
 
       </>
     )
