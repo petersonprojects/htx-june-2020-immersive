@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Watch from './Watch';
+// import Watch from './Watch';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Watch />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
