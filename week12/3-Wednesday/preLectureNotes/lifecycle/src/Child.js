@@ -29,7 +29,7 @@ class Child extends Component {
     // gets called after every render
     componentDidUpdate = (prevProps, prevState) => {
 
-        console.log('componentdidupdate')
+        console.log('component did update')
         // happens after the rendering happens
         // component did mount only happens ONCE
         // this happens every single time the render function is executed

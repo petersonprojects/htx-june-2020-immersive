@@ -67,6 +67,7 @@ class App extends Component {
           {/* <Child data={4} /> */}
 
           {
+            // can NOT use an if statement in interpolating brackets, thats why ternaries are used
             this.state.loadChild ? <Child data={4} /> : null // null is unmounting the child from the dom
           }
 
