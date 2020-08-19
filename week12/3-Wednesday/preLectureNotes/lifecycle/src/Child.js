@@ -13,6 +13,7 @@ class Child extends Component {
     //new update has been made to props
     // this.props.data is the old value for the prop
     // nextProps is the new one
+    // gets called before every render
     shouldComponentUpdate = (nextProps, nextState) => {
         // nextProps are the receiving props
         // nextProps.nameOfProperty
@@ -23,6 +24,16 @@ class Child extends Component {
 
 
     }
+
+    // gets called after every render
+    componentDidUpdate = (prevProps, prevState) => {
+        
+        // happens after the rendering happens
+        // component did mount only happens ONCE
+        // this happens every single time the render function is executed
+        
+    }
+    
 
     // static getSnapshotBeforeUpdate(prevProps, prevState){
 
