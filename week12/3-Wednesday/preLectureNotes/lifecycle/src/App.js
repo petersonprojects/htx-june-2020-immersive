@@ -17,7 +17,8 @@ class App extends Component {
     console.log("constructor called");
 
     this.state = {
-      isLoaded: false
+      isLoaded: false,
+      loadChild: true
     }
   }
 
@@ -38,6 +39,7 @@ class App extends Component {
         {
           isLoaded: true,
           sendingChildData: 4
+          
         }
       )
     })
@@ -51,10 +53,14 @@ class App extends Component {
 
   handleClick = () => {
     
+    // this.setState({
+    //   sendingChildData: this.state.sendingChildData + 1
+    // }, ()=>{
+    //   console.log(this.state.sendingChildData);
+    // })
+
     this.setState({
-      sendingChildData: this.state.sendingChildData + 1
-    }, ()=>{
-      console.log(this.state.sendingChildData);
+      loadChild: !this.state.loadChild
     })
   }
   
@@ -70,10 +76,21 @@ class App extends Component {
         <>
           Home page
           <br/> <br />
-          {/* <Child data={this.state.sendingChildData} /> */}
+
+          {/* <Child data={4} /> */}
+
+          {this.state.loadChild
+            ? <Child data={4} />
+            : null
+          }
+
           
           <br /><br />
+
           <button onClick={this.handleClick}>Click</button>
+
+
+          {/* <button onClick={this.handleClick}>Click</button> */}
         </>
       )
     }

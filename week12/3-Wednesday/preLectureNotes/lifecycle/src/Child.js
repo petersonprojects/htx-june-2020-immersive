@@ -61,9 +61,13 @@ class Child extends Component {
         // }
     }
 
+    componentWillUnmount = () => {
+        //clean up on component
+        
+        console.log(`component will unmount`);
+    }
 
-
-
+    
     render() {
         return (
             <>
