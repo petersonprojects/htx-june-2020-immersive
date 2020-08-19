@@ -6,7 +6,8 @@ class Child extends Component {
         super(props)
 
         this.state = {
-            
+            increasing: false,
+            num: 10
         }
     }
 
@@ -27,11 +28,27 @@ class Child extends Component {
 
     // gets called after every render
     componentDidUpdate = (prevProps, prevState) => {
-        
+
+        console.log('componentdidupdate')
         // happens after the rendering happens
         // component did mount only happens ONCE
         // this happens every single time the render function is executed
-        console.log(`previous props data: ${prevProps.data} current props: ${this.props.data}`)
+        // console.log(`previous props data: ${prevProps.data} current props: ${this.props.data}`)
+
+        // state for number of characters had reached 12 (example)
+        // new api call
+        
+        // let increasing = prevProps.data < this.state.num
+
+        // if(increasing){
+        //     this.setState({
+        //         increasing: increasing,
+        //         num: this.state.num - 1
+        //     }, ()=>{
+        //         console.log(`${this.state.increasing}, ${this.state.num}`)
+        //     })
+        // }
+
     }
     
 

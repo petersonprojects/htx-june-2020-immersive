@@ -37,6 +37,11 @@ class App extends Component {
 
   }
 
+  componentDidUpdate = (prevProps, prevState) => {
+    console.log('component did update')
+  }
+  
+
   handleClick = () => {
     this.setState({
       sendingChildData: this.state.sendingChildData + 1
