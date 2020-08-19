@@ -5,7 +5,7 @@ import Watch from './Watch';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Watch />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
