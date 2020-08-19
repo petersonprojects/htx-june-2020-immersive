@@ -1,9 +1,11 @@
 import React from 'react'
 
-const ProjectItem = () => {
+const ProjectItem = ({project, onDelete}) => {
     return (
         <>
-            
+            {project.title} {project.category} 
+            <button onClick={onDelete}>X</button>
+            <br/>
         </>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ProjectManagement from './ProjectManagement';
+import ProjectManagement from './components/ProjectManagement';
 
 
 ReactDOM.render(
