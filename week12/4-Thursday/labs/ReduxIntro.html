@@ -8,6 +8,8 @@
 </head>
 <body>
 
+    Intro to Redux
+
 
     <script>
 
@@ -64,7 +66,13 @@
 
         let store = Redux.createStore(reducer) // pass into this store a reducer
 
-        console.log(store)
+        let showState = () => {
+            console.log(store.getState())
+        }
+
+        store.subscribe(showState); 
+
+        store.dispatch(addPerson(1, "Micah", 25))
 
     </script>
 
