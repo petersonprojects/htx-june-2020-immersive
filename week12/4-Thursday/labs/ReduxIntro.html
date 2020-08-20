@@ -7,10 +7,64 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js" integrity="sha512-P36ourTueX/PrXrD4Auc1kVLoTE7bkWrIrkaM0IG2X3Fd90LFgTRogpZzNBssay0XOXhrIgudf4wFeftdsPDiQ==" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+
+
     <script>
 
-        let store = Redux.createStore()
+        // action is an object
+        // action creator is a function that returns an object
+
+        // addPerson is an action creator
+        let addPerson = (id, name, age) => {
+
+
+            // action
+            return {
+                type: "ADD",
+                personData: {
+                    id: id,
+                    name: name,
+                    age: age
+                }
+            }
+        }
+
+        let initalState = {
+            persons: [],
+            count: 0
+        }
+
+        // reducer is just a function that takes in two parameters
+        // purpose of the reducer is to update the global state
+        let reducer = (state, action) => {
+
+            // checking to see if the global state exists
+            // if it doesnt exist, then set the state equal to initialState
+            if(state == undefined)
+            {
+                state = initalState
+            }
+
+
+            if(action.type === "ADD")
+            {
+                return {
+                    ...state,
+                    persons: state.persons.concat(action.personData)
+                }
+            }
+            else
+            {
+                // return the current state if no action type was matched
+                return state;
+            }
+
+        }
+
+
+        let store = Redux.createStore(reducer) // pass into this store a reducer
+
+        console.log(store)
 
     </script>
 
