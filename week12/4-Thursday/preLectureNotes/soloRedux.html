@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    Learning Redux
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
+
+
+    <script>
+
+        //action is an object 
+        //action creator: action that returns an object 
+
+       
+        //action creator
+        let addPerson = (id, name, age)=>{
+
+            //action
+            return {
+
+                type: "ADD",
+                personData: {
+                    id: id, 
+                    name: name,
+                    age: age
+                }
+            }
+        }
+
+        let removePerson = (id) =>{
+
+            return {
+                type: "REMOVE",
+                personId: id
+            }
+
+        }
+
+        let initialState = {
+            persons: [],
+            count: 0,
+            date: '1/1/2020'
+        }
+
+       
+        //purpose of reducer is to update the global state
+        let reducer = (state, action) =>{
+
+            // checking to see if the global state exists
+            // if it doesn't exist, then set equal to initialState
+            if (state == undefined){
+                state = initialState
+            }
+
+
+            if(action.type === "ADD"){
+
+                return {
+                    ...state,
+                    persons: state.persons.concat(action.personData)
+                }
+
+            }
+            else if (action.type === "REMOVE"){
+
+                //returning new updated state
+                // let newState = [...state];
+
+                // newState.persons.filter()
+                return {
+                    ...state,
+                    count: state.count + 1, 
+                    persons: state.persons.filter(pObj => pObj.id != action.personId)
+                }
+            }
+
+            else {
+                //return the current state if no action type was matched
+                return state
+            }
+
+
+        }
+
+
+        let store = Redux.createStore(reducer)  //pass into this store a reducer
+
+         
+
+        let showState = () =>{
+            console.log(store.getState())
+        }
+
+        store.subscribe(showState)  //functions
+
+        store.dispatch(addPerson(1, 'Michael', 21)) //
+        store.dispatch(addPerson(2, 'Cainan', 21))
+        store.dispatch(addPerson(3, 'Woody', 21))
+        store.dispatch(addPerson(4, 'Micah', 21))
+        store.dispatch(addPerson(5, 'Dan', 21))
+        store.dispatch(addPerson(6, 'Chris', 21))
+        store.dispatch(addPerson(7, 'RJ', 21))
+        store.dispatch(addPerson(8, 'Jeremy', 21))
+        store.dispatch(removePerson(1))
+        store.dispatch(removePerson(4))
+        store.dispatch(removePerson(8))
+
+        
+
+    </script>
+</body>
+
+</html>
