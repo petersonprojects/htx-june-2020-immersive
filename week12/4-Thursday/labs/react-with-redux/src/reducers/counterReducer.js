@@ -3,7 +3,7 @@
 // state always comes first and the action second
 // we are initializing state here as 0
 
-let counterReducer = (state = { count: 0 }, action) => {
+let counterReducer = (state = { count: 5 }, action) => {
 
     // switch cases are if, else if, else blocks
     switch(action.type)
