@@ -14,6 +14,7 @@ export const StyledDiv = styled.div`
 export const StyledButton = styled.button`
     font-size: 40px;
     padding: 10px;
+    border: ${props => props.border || "solid 4px purple"};
     &:hover {
         background-color: yellow;
     }

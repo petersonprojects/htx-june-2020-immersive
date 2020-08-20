@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import {StyledButton} from './components/Styles';
 
@@ -21,6 +21,9 @@ const styles = {
 }
 
 const App = () => {
+
+  // const [state, setstate] = useState(initialState);
+
   return (
     <>
       <div style={styles.myDivStyles}>Hello World</div>
@@ -28,9 +31,11 @@ const App = () => {
 
       <Div>Hi, i am a styled component</Div>
 
-      <StyledButton myData={2}>My Button</StyledButton>
+      <StyledButton border="none">My Button</StyledButton>
+      <StyledButton>My Button</StyledButton>
     </>
   )
+
 }
 
 export default App
