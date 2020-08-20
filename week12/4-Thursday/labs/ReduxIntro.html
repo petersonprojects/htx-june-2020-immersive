@@ -41,7 +41,8 @@
 
         let initalState = {
             persons: [],
-            count: 0
+            count: 0,
+            date: '08/20/2020'
         }
 
         // reducer is just a function that takes in two parameters
@@ -68,6 +69,7 @@
                 // returning an updated state
                 return {
                     ...state,
+                    count: state.count + 1,
                     persons: state.persons.filter(pObj => pObj.id != action.personID) // we want it to return all the stuff that's not the ID
                 }
             }
