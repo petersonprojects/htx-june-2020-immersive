@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {StyledButton} from './components/Styles';
 
 const Div = styled.div`
   margin: 40px;
@@ -26,6 +27,8 @@ const App = () => {
       <p style={styles.p}>This is an inline style</p>
 
       <Div>Hi, i am a styled component</Div>
+
+      <StyledButton myData={2}>My Button</StyledButton>
     </>
   )
 }
