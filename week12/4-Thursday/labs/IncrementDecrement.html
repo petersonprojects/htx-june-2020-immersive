@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Decrement</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js" integrity="sha512-P36ourTueX/PrXrD4Auc1kVLoTE7bkWrIrkaM0IG2X3Fd90LFgTRogpZzNBssay0XOXhrIgudf4wFeftdsPDiQ==" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    Increment Decrement
+
+    <script>
+        
+        let initalState = {
+            count: 0
+        }
+
+        let increment = () => {
+
+            return {
+                type: "INCREMENT"
+            }
+
+        }
+
+        let decrement = () => {
+
+            return {
+                type: "DECREMENT"
+            }
+
+        }
+
+        let reducer = (state, action) => {
+
+            if(state == undefined)
+            {
+                state = initalState
+            }
+
+            if(action.type === "INCREMENT")
+            {
+                return {
+                    count: state.count + 1
+                }
+            }
+            else if(action.type === "DECREMENT")
+            {
+                // returning an updated state
+                return {
+                    count: state.count - 1
+                }
+            }
+            else
+            {
+                // return the current state if no action type was matched
+                return state;
+            }
+        }
+
+        let store = Redux.createStore(reducer);
+
+        let showState = () => {
+            console.log(store.getState())
+        }
+
+        store.subscribe(showState);
+
+        // inital state of count is 0
+
+        store.dispatch(increment());
+        store.dispatch(increment());
+        store.dispatch(increment());
+        store.dispatch(increment());
+        store.dispatch(decrement());
+        store.dispatch(decrement());
+        store.dispatch(decrement());
+        store.dispatch(decrement());
+
+    </script>
+    
+</body>
+</html>

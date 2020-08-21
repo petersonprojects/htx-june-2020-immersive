@@ -26,6 +26,7 @@ const App = () => {
 
   return (
     <>
+<<<<<<< HEAD
       <div style={styles.myDivStyles}>Hello World</div>
       <p style={styles.p}>This is an inline style</p>
 
@@ -33,6 +34,10 @@ const App = () => {
 
       <StyledButton border="none">My Button</StyledButton>
       <StyledButton>My Button</StyledButton>
+=======
+      <div>Hello world</div>
+
+>>>>>>> 29e024cac592c57bc9ddbfd4850074b201ec6379
     </>
   )
 
