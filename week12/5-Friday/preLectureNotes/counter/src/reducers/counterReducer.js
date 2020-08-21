@@ -1,25 +1,24 @@
 
-{}
 
-let counterReducer = (state = { count: 5 }, action) => {
+let counterReducer = (state = {count:5}, action) => {
 
-
+    
     switch (action.type) {
-
-        case 'Increase':
-            return {
+        case 'INCREASE':
+            return{
                 ...state,
                 count: state.count + 1
             }
-        case 'Decrease':
+
+        case 'DECREASE':
             return {
                 ...state,
                 count: state.count - 1
             }
+            
         default:
             return state;
     }
-
 }
 
 export default counterReducer;
