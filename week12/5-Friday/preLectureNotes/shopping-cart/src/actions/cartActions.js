@@ -7,15 +7,15 @@ export let addProduct = (productItem) => {
 
     return {
         type: 'AddProduct',
-        productData: productItem
+        productData: {...productItem}
     }
 }
 
-export let deleteProduct = (id) => {
+export let deleteProduct = (productItem) => {
 
     return {
         type: 'DeleteProduct',
-        id: id
+        productData: {...productItem}
     }
 }
 
