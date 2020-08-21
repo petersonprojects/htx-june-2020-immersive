@@ -1,4 +1,4 @@
-
+import { v1 as uuidv1 } from 'uuid';
 // function that takes in the state and the action
 
 let cartReducer = (state, action) => {
@@ -9,9 +9,9 @@ let cartReducer = (state, action) => {
             totalCost: 1,
             productCart: [
                 {
-                    id: 1,
-                    productName: "apples",
-                    productPrice: 1
+                    id: uuidv1(),
+                    productName: "oranges",
+                    productPrice: 1.03
                 }
             ]
         }
@@ -23,7 +23,7 @@ let cartReducer = (state, action) => {
             return {
                 ...state,
                 totalCost: state.totalCost + parseFloat(action.productData.productPrice),
-                productCart: state.productData.concat(action.productData)
+                productCart: [...state.productCart, action.productData]
             }
         case "DeleteProduct":
             let updatedCart = state.productCart.filter(product => {

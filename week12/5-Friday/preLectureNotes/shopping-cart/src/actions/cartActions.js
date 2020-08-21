@@ -7,7 +7,7 @@ export let addProduct = (productItem) => {
 
     return {
         type: 'AddProduct',
-        productData: {...productItem}
+        productData: productItem
     }
 }
 
@@ -15,7 +15,7 @@ export let deleteProduct = (productItem) => {
 
     return {
         type: 'DeleteProduct',
-        productData: {...productItem}
+        productData: productItem
     }
 }
 
