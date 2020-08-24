@@ -1,5 +1,4 @@
 
-
 // let state = {
 
 //     student: {
@@ -102,14 +101,23 @@
 
 // console.log(newState)
 
-let state = [1, 2, 3, 5, 6];
+// let state = [1, 2, 3, 5, 6];
 
-let newItem = 4;
+// let newItem = 4;
 
-let newState = [...state];
+// let newState = [...state];
 
 
-// index of whwere u wanna start and what u wanna delete, and what u wanna insert
-newState.splice(3, 0, newItem)
+// // index of whwere u wanna start and what u wanna delete, and what u wanna insert
+// newState.splice(3, 0, newItem)
 
-console.log(newState)
+// console.log(newState)
+
+// let state = [1, 2, "X", 4];
+
+// let newState = state.filter(item => {
+
+//     return item != "X"
+// })
+
+// console.log(newState)
