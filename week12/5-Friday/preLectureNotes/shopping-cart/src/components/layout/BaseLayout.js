@@ -8,7 +8,6 @@ const BaseLayout = (props) => {
         <br/> <br/>
         {props.children}
 
-
     </>
     )
 }

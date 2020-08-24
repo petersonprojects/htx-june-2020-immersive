@@ -7,6 +7,7 @@ let cartReducer = (state, action) => {
     {
         state = {
             totalCost: 1.03,
+            storeItems:[],
             productCart: [
                 {
                     id: uuidv1(),
