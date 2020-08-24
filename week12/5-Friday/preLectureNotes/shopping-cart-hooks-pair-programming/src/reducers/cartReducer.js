@@ -3,11 +3,13 @@ import { v1 as uuidv1 } from 'uuid';
 const initialState = {
 
     totalCost: 2,
+    storeItems: [],
     cart: [
         {
             id: uuidv1(),
             productName: "Oranges",
-            price: 2
+            price: 2,
+            numberOfItems: 1
         }
     ]
 }
