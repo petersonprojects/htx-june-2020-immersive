@@ -86,3 +86,30 @@
 // console.log(state)
 // console.log(newState)
 
+// let state = [1, 2, "X", 4];
+
+// let newState = state.map(item => {
+    
+//     if(item == "X")
+//     {
+//         item = 3
+//     }
+
+//     return item;
+
+// });
+
+
+// console.log(newState)
+
+let state = [1, 2, 3, 5, 6];
+
+let newItem = 4;
+
+let newState = [...state];
+
+
+// index of whwere u wanna start and what u wanna delete, and what u wanna insert
+newState.splice(3, 0, newItem)
+
+console.log(newState)
