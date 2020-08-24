@@ -9,6 +9,7 @@ const Cart = () => {
     const totalCost = useSelector(state => state.totalCost);
 
     // use bootstrap
+    
     // initial state? create products (imageURL, price, description, name)
     // click on images with titles and see description, price, title and if I recommend it
     // when user clicks on an item it adds it to your cart
