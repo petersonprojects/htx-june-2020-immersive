@@ -18,7 +18,7 @@ class Books extends Component {
 };
 
 const mapStateToProps = state => {
-  return { books: state.books }
+  return { books: state.books.books }
 }
 
 export default connect(mapStateToProps)(Books);
